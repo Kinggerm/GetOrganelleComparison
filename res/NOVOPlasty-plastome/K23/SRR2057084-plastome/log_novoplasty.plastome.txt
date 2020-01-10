@@ -1,0 +1,296 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.plastome
+Type                  = chloro
+Genome range          = 15000-180000
+K-mer                 = 23
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/plant_cp.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 100.0
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR2057084_1.fastq.gz
+Reverse reads         = ../../../SRR2057084_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: AATCGGCCAAAATAACCATGAGCAGCTACGATATTATAAGTCTCTTCCTCTTGACCGAATCTGTAACCTGCGTTAGCAGATTCGTTTTCAGTGGTTTCC
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 11792 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 01                  : 52619 bp
+Contig 02                  : 1236 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 02                  : 2838 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 02                  : 2241 bp
+Contig 03                  : 3254 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 6415 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 5124 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 2506 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 2214 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 2051 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 6094 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 3300 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 2043 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 7654 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 8822 bp
+Contig 04                  : 14668 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 04                  : 2093 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 04                  : 18348 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 04                  : 2873 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 04                  : 4126 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 04                  : 8195 bp
+Contig 05                  : 556 bp
+Contig 06                  : 858 bp
+Contig 07                  : 464 bp
+Contig 08                  : 368 bp
+Contig 09                  : 266 bp
+Contig 10                  : 485 bp
+Contig 100                  : 1191 bp
+Contig 101                  : 4460 bp
+Contig 102                  : 7677 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 102                  : 2848 bp
+Contig 103                  : 7120 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 103                  : 5364 bp
+Contig 104                  : 1228 bp
+Contig 105                  : 3949 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 105                  : 2388 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 105                  : 8543 bp
+Contig 106                  : 1205 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 106                  : 4268 bp
+Contig 107                  : 8979 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 107                  : 2794 bp
+Contig 108                  : 975 bp
+Contig 109                  : 5032 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 109                  : 3778 bp
+Contig 11                  : 1359 bp
+Contig 110                  : 9312 bp
+Contig 12                  : 1409 bp
+Contig 13                  : 2755 bp
+Contig 14                  : 2384 bp
+Contig 15                  : 3404 bp
+Contig 16                  : 1477 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 16                  : 204 bp
+Contig 17                  : 360 bp
+Contig 18                  : 317 bp
+Contig 19                  : 373 bp
+Contig 20                  : 324 bp
+Contig 21                  : 400 bp
+Contig 22                  : 502 bp
+Contig 23                  : 1972 bp
+Contig 24                  : 371 bp
+Contig 25                  : 4632 bp
+Contig 26                  : 466 bp
+Contig 27                  : 2472 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 27                  : 475 bp
+Contig 28                  : 3750 bp
+Contig 29                  : 4165 bp
+Contig 30                  : 2233 bp
+Contig 31                  : 5111 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 31                  : 1388 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 31                  : 592 bp
+Contig 32                  : 2800 bp
+Contig 33                  : 1582 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 33                  : 1309 bp
+Contig 34                  : 1805 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 34                  : 1309 bp
+Contig 35                  : 4627 bp
+Contig 36                  : 401 bp
+Contig 37                  : 3982 bp
+Contig 38                  : 555 bp
+Contig 39                  : 6344 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 39                  : 2462 bp
+Contig 40                  : 6301 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 40                  : 765 bp
+Contig 41                  : 6571 bp
+Contig 42                  : 5971 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 42                  : 2462 bp
+Contig 43                  : 1679 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 43                  : 3310 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 43                  : 365 bp
+Contig 44                  : 10257 bp
+Contig 45                  : 6898 bp
+Contig 46                  : 274 bp
+Contig 47                  : 338 bp
+Contig 48                  : 2120 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 48                  : 3589 bp
+Contig 49                  : 920 bp
+Contig 50                  : 2728 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 50                  : 5321 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 50                  : 592 bp
+Contig 51                  : 377 bp
+Contig 52                  : 2557 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 52                  : 366 bp
+Contig 53                  : 2995 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 53                  : 366 bp
+Contig 54                  : 2349 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 54                  : 5321 bp
+Contig 55                  : 2693 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 55                  : 11820 bp
+Contig 56                  : 614 bp
+Contig 57                  : 352 bp
+Contig 58                  : 614 bp
+Contig 59                  : 4575 bp
+Contig 60                  : 17943 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 60                  : 3263 bp
+Contig 61                  : 12484 bp
+Contig 62                  : 13298 bp
+Contig 63                  : 2858 bp
+Contig 64                  : 579 bp
+Contig 65                  : 10639 bp
+Contig 66                  : 11825 bp
+Contig 67                  : 7319 bp
+Contig 68                  : 873 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 68                  : 5525 bp
+Contig 69                  : 976 bp
+Contig 70                  : 1406 bp
+Contig 71                  : 3625 bp
+Contig 72                  : 2524 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 72                  : 3885 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 72                  : 1856 bp
+Contig 73                  : 3712 bp
+Contig 74                  : 17061 bp
+Contig 75                  : 9863 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 75                  : 6309 bp
+Contig 76                  : 751 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 76                  : 1895 bp
+Contig 77                  : 15716 bp
+Contig 78                  : 3693 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 78                  : 4964 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 78                  : 1900 bp
+Contig 79                  : 3686 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 79                  : 4964 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 79                  : 3428 bp
+Contig 80                  : 1165 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 80                  : 4967 bp
+Contig 81                  : 11655 bp
+Contig 82                  : 418 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 82                  : 1654 bp
+Contig 83                  : 5459 bp
+Contig 84                  : 14943 bp
+Contig 85                  : 335 bp
+Contig 86                  : 1584 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 86                  : 4878 bp
+Contig 87                  : 10677 bp
+Contig 88                  : 12987 bp
+Contig 89                  : 14264 bp
+Contig 90                  : 1157 bp
+Contig 91                  : 984 bp
+Contig 92                  : 9863 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 92                  : 5906 bp
+Contig 93                  : 13464 bp
+Contig 94                  : 14924 bp
+Contig 95                  : 763 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 95                  : 4553 bp
+Contig 96                  : 7798 bp
+Estimated gap      : -316 bp to -316 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 96                  : 3104 bp
+Contig 97                  : 10274 bp
+Contig 98                  : 14325 bp
+Contig 99                  : 8706 bp
+
+Total contigs              : 169
+Largest contig             : 52619 bp
+Smallest contig            : 204 bp
+Average insert size        : 511 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 18362778
+Aligned reads              : 2122912
+Assembled reads            : 519110
+
+----------------------------------------------------------------------------------------------------
+

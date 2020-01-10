@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 SRR5602575_1.fastq.gz -2 SRR5602575_2.fastq.gz -o Published-plastome/Published--SRR5602575-plastome--evaluated -f Published-plastome/KX548217.1.fasta --draw -c yes --continue --plot-title SRR5602575-Published --plot-subtitle "Genbank accession: KX548217.1      Claimed status: circular genome"
+
+2019-09-18 17:27:55,069 - INFO: Making  - bowtie2 index ...
+2019-09-18 17:27:55,476 - INFO: Making  - bowtie2 index finished.
+2019-09-18 17:27:55,477 - INFO: Mapping reads to  bowtie2 index ...
+2019-09-18 17:29:58,003 - INFO: Mapping finished.
+2019-09-18 17:29:58,007 - INFO: Reference length: 151837 (151837)
+2019-09-18 17:30:04,415 - INFO: # mapped reads: 13160×2+1193
+2019-09-18 17:30:04,416 - INFO: # mapped pairs: 13160
+2019-09-18 17:30:04,416 - INFO: Aligned: 50.81±13.31 (50.81±13.31)
+2019-09-18 17:30:04,416 - INFO: Mismatched: 1.54±1.88 (1.54±1.88)
+2019-09-18 17:30:04,416 - INFO: Inserted: 0.10±3.52 (0.10±3.52)
+2019-09-18 17:30:04,416 - INFO: Deleted: 0.04±0.32 (0.04±0.32)
+2019-09-18 17:30:04,416 - INFO: Customized error rate: 0.0332±0.0790 (0.0332±0.0790)
+

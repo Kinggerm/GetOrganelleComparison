@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 ../ERR964904_1.fastq.gz -2 ../ERR964904_2.fastq.gz -o customized--ERR964904-plastome/customized--ERR964904-plastome--evaluated -f customized--ERR964904-plastome/embplant_pt.K85.complete.graph1.1.path_sequence.fasta -t 1 --continue --draw --plot-title ERR964904-GetOrganelle --plot-subtitle "Arguments: -R 8 -t 1 -k 55,85     Result status: circular genome"
+
+2019-06-25 22:02:11,124 - INFO: Making  - bowtie2 index ...
+2019-06-25 22:02:11,398 - INFO: Making  - bowtie2 index finished.
+2019-06-25 22:02:11,399 - INFO: Mapping reads to  bowtie2 index ...
+2019-06-25 22:06:38,608 - INFO: Mapping finished.
+2019-06-25 22:06:38,608 - INFO: Reference length: 19400 (19400)
+2019-06-25 22:06:41,164 - INFO: # mapped reads: 15752×2+3729
+2019-06-25 22:06:41,164 - INFO: # mapped pairs: 15752
+2019-06-25 22:06:41,164 - INFO: Aligned: 183.09±56.22 (183.09±56.22)
+2019-06-25 22:06:41,164 - INFO: Mismatched: 1.55±2.14 (1.55±2.14)
+2019-06-25 22:06:41,164 - INFO: Inserted: 0.34±1.94 (0.34±1.94)
+2019-06-25 22:06:41,164 - INFO: Deleted: 0.09±0.74 (0.09±0.74)
+2019-06-25 22:06:41,164 - INFO: Customized error rate: 0.0108±0.0167 (0.0108±0.0167)
+

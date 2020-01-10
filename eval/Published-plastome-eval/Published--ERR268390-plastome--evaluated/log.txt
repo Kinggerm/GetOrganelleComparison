@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 ERR268390_1.fastq.gz -2 ERR268390_2.fastq.gz -o Published-plastome/Published--ERR268390-plastome--evaluated -f Published-plastome/HF937082.1.fasta --draw -c yes --continue --plot-title ERR268390-Published --plot-subtitle "Genbank accession: HF937082.1      Claimed status: circular genome"
+
+2019-09-18 17:27:56,925 - INFO: Making  - bowtie2 index ...
+2019-09-18 17:27:57,339 - INFO: Making  - bowtie2 index finished.
+2019-09-18 17:27:57,339 - INFO: Mapping reads to  bowtie2 index ...
+2019-09-18 17:32:09,670 - INFO: Mapping finished.
+2019-09-18 17:32:09,672 - INFO: Reference length: 124084 (124084)
+2019-09-18 17:32:36,032 - INFO: # mapped reads: 195739×2+4553
+2019-09-18 17:32:36,033 - INFO: # mapped pairs: 195739
+2019-09-18 17:32:36,033 - INFO: Aligned: 322.21±37.82 (322.21±37.82)
+2019-09-18 17:32:36,033 - INFO: Mismatched: 2.35±2.30 (2.35±2.30)
+2019-09-18 17:32:36,033 - INFO: Inserted: 0.14±6.16 (0.14±6.16)
+2019-09-18 17:32:36,033 - INFO: Deleted: 0.02±0.34 (0.02±0.34)
+2019-09-18 17:32:36,033 - INFO: Customized error rate: 0.0078±0.0206 (0.0078±0.0206)
+

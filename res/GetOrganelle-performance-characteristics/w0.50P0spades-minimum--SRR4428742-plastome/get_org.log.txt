@@ -1,0 +1,82 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR4428742_250M_1.fastq -2 SRR4428742_250M_2.fastq -R 4 -t 1 -J 1 -M 1 -s ../local_seed/NC_011942.1.Gnetum_parvifolium.complete_plastome.fasta -w 0.50 -o w0.50P0spades-minimum--SRR4428742-plastome -k 35,75 -F embplant_pt -P 0
+
+2019-09-22 18:27:47,766 - INFO: Pre-reading fastq ...
+2019-09-22 18:27:47,767 - INFO: Estimating reads to use ...
+2019-09-22 18:27:48,918 - INFO: Estimating reads to use finished.
+2019-09-22 18:27:52,581 - INFO: Counting read qualities ...
+2019-09-22 18:27:52,795 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-09-22 18:27:52,796 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-09-22 18:27:52,910 - INFO: Mean error rate = 0.0061
+2019-09-22 18:27:52,912 - INFO: Counting read lengths ...
+2019-09-22 18:28:10,824 - INFO: Mean = 100.0 bp, maximum = 100 bp.
+2019-09-22 18:28:10,824 - INFO: Reads used = 2500000+2500000
+2019-09-22 18:28:10,824 - INFO: Pre-reading fastq finished.
+
+2019-09-22 18:28:10,825 - INFO: Making seed reads ...
+2019-09-22 18:28:10,835 - INFO: Making seed - bowtie2 index ...
+2019-09-22 18:28:11,177 - INFO: Making seed - bowtie2 index finished.
+2019-09-22 18:28:11,178 - INFO: Mapping reads to seed bowtie2 index ...
+2019-09-22 18:29:49,113 - INFO: Mapping finished.
+2019-09-22 18:29:49,113 - INFO: Seed reads made: w0.50P0spades-minimum--SRR4428742-plastome/seed/embplant_pt.initial.fq (11058876 bytes)
+2019-09-22 18:29:49,114 - INFO: Making seed reads finished.
+
+2019-09-22 18:29:49,114 - INFO: Checking seed reads and parameters ...
+2019-09-22 18:29:54,213 - INFO: Estimated embplant_pt-hitting base-coverage = 432.80
+2019-09-22 18:29:54,214 - INFO: Setting '-w 50'
+2019-09-22 18:29:54,214 - INFO: Setting '--max-extending-len inf'
+2019-09-22 18:29:54,278 - INFO: Checking seed reads and parameters finished.
+
+2019-09-22 18:29:54,279 - INFO: Making read index ...
+2019-09-22 18:31:00,553 - INFO: Mem 1.787 G, 4355099 candidates in all 5000000 reads
+2019-09-22 18:31:01,827 - INFO: Making read index finished.
+
+2019-09-22 18:31:01,827 - INFO: Extending ...
+2019-09-22 18:31:01,827 - INFO: Adding initial words ...
+2019-09-22 18:31:03,161 - INFO: AW 130604
+2019-09-22 18:33:18,336 - INFO: Round 1: 4355099/4355099 AI 187105 AW 6442091 Mem 1.002
+2019-09-22 18:36:10,868 - INFO: Round 2: 4355099/4355099 AI 1270082 AW 44331616 Mem 5.628
+2019-09-22 18:38:14,949 - INFO: Round 3: 4355099/4355099 AI 1831504 AW 67834816 Mem 9.067
+2019-09-22 18:39:44,459 - INFO: Round 4: 4355099/4355099 AI 2012099 AW 76807874 Mem 9.974
+2019-09-22 18:39:44,459 - INFO: Hit the round limit 4 and terminated ...
+2019-09-22 18:41:45,195 - INFO: Extending finished.
+
+2019-09-22 18:41:45,529 - INFO: Separating filtered fastq file ... 
+2019-09-22 18:42:03,968 - INFO: Setting '-k 35,75'
+2019-09-22 18:42:03,968 - INFO: Assembling using SPAdes ...
+2019-09-22 19:54:36,359 - INFO: Insert size = 155.228, deviation = 12.305, left quantile = 141, right quantile = 170
+2019-09-22 19:54:36,360 - INFO: Assembling finished.
+
+2019-09-22 19:54:36,360 - INFO: Slimming assembly graphs ...
+2019-09-22 19:55:02,017 - INFO: Slimming w0.50P0spades-minimum--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg finished!
+2019-09-22 19:55:02,018 - INFO: Slimming assembly graphs finished
+
+2019-09-22 19:55:02,018 - INFO: Extracting embplant_pt from the assemblies ...
+2019-09-22 19:55:02,018 - INFO: Disentangling w0.50P0spades-minimum--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-09-22 19:55:02,834 - INFO: Vertex_9455610_9524878_9416592_9411080_10058996_2617120_9382790_9027684_9448660_9861418_9393562_9863398_9567490_941408_9541350_9846552_9852038_9168040_9538412_9850162_9831368_9855750_9523980_9865314 #copy = 2
+2019-09-22 19:55:02,834 - INFO: Vertex_9584224_9799188_2675850_9855426_9664814_2562724_9424840_377694_9397528_9863942_9159458_9861500_9439590_9850786_9553520_9447390_9798480_9080718_8894974_8949698_9422386_9403210_2550438_9152574_9856256_9390396_9758712_603144_9863392_9266254_9858740_9393912_9837648_9543296_9429904_9281530_9836458_9691786_9833848_9259092_9855298_9820262_9847962_9849966 #copy = 1
+2019-09-22 19:55:02,834 - INFO: Vertex_9831116_9820992_867328_9402782 #copy = 1
+2019-09-22 19:55:02,834 - INFO: Average embplant_pt kmer-coverage = 99.464
+2019-09-22 19:55:02,834 - INFO: Average embplant_pt base-coverage = 382.565
+2019-09-22 19:55:02,834 - INFO: Writing output ...
+2019-09-22 19:55:02,990 - WARNING: More than one circular genome structure produced ...
+2019-09-22 19:55:02,991 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2019-09-22 19:55:02,996 - INFO: Writing PATH1 of complete embplant_pt to w0.50P0spades-minimum--SRR4428742-plastome/embplant_pt.K75.complete.graph1.1.path_sequence.fasta
+2019-09-22 19:55:03,001 - INFO: Writing PATH2 of complete embplant_pt to w0.50P0spades-minimum--SRR4428742-plastome/embplant_pt.K75.complete.graph1.2.path_sequence.fasta
+2019-09-22 19:55:03,001 - INFO: Writing GRAPH to w0.50P0spades-minimum--SRR4428742-plastome/embplant_pt.K75.complete.graph1.selected_graph.gfa
+2019-09-22 19:55:03,011 - INFO: Result status of embplant_pt: circular genome
+2019-09-22 19:55:03,059 - INFO: Please visualize w0.50P0spades-minimum--SRR4428742-plastome/filtered_K75.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg using Bandage to confirm the final result.
+2019-09-22 19:55:03,060 - INFO: Writing output finished.
+2019-09-22 19:55:03,060 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 5235.70 s
+Thank you!

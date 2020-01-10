@@ -1,0 +1,85 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 ERR466754_1.fastq.gz -2 ERR466754_2.fastq.gz -F animal_mt -o auto--ERR466754-mitogenome -R 10 -t 1 -k 21,43,65,87,127
+
+2019-06-23 21:47:00,416 - INFO: Pre-reading fastq ...
+2019-06-23 21:47:00,417 - INFO: Estimating reads to use ...
+2019-06-23 21:47:01,654 - INFO: Tasting 100000+100000 reads ...
+2019-06-23 21:47:10,647 - INFO: Tasting 500000+500000 reads ...
+2019-06-23 21:47:56,183 - INFO: Tasting 2500000+2500000 reads ...
+2019-06-23 21:54:59,814 - INFO: Tasting 12500000+12500000 reads ...
+2019-06-23 22:12:09,940 - INFO: Estimating reads to use finished.
+2019-06-23 22:12:09,941 - INFO: Unzipping reads file: ERR466754_1.fastq.gz (5039190032 bytes)
+2019-06-23 22:15:22,177 - INFO: Unzipping reads file: ERR466754_2.fastq.gz (5357232237 bytes)
+2019-06-23 22:18:50,850 - INFO: Counting read qualities ...
+2019-06-23 22:18:51,077 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-06-23 22:18:51,077 - WARNING: Max quality score 'M'(77:44) in your fastq file exceeds the usual range (33, 74)
+2019-06-23 22:18:51,079 - INFO: Trimming bases with qualities (0.02%): 33..33  !
+2019-06-23 22:18:51,211 - INFO: Mean error rate = 0.0032
+2019-06-23 22:18:51,213 - INFO: Counting read lengths ...
+2019-06-23 22:24:55,859 - INFO: Mean = 100.0 bp, maximum = 100 bp.
+2019-06-23 22:24:55,859 - INFO: Reads used = 75000000+75000000
+2019-06-23 22:24:55,859 - INFO: Pre-reading fastq finished.
+
+2019-06-23 22:24:55,859 - INFO: Making seed reads ...
+2019-06-23 22:24:55,860 - INFO: Seed bowtie2 index existed!
+2019-06-23 22:24:55,860 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-23 23:36:55,437 - INFO: Mapping finished.
+2019-06-23 23:36:55,438 - INFO: Seed reads made: auto--ERR466754-mitogenome/seed/animal_mt.initial.fq (42964 bytes)
+2019-06-23 23:36:55,438 - INFO: Making seed reads finished.
+
+2019-06-23 23:36:55,438 - INFO: Checking seed reads and parameters ...
+2019-06-23 23:36:55,438 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2019-06-23 23:36:55,438 - INFO: If the result graph is not a circular organelle genome, 
+2019-06-23 23:36:55,439 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2019-06-23 23:36:59,609 - INFO: Pre-assembling mapped reads ...
+2019-06-23 23:37:03,758 - INFO: Pre-assembling mapped reads finished.
+2019-06-23 23:37:03,758 - INFO: Estimated animal_mt-hitting base-coverage = 7.78
+2019-06-23 23:37:03,759 - WARNING: Guessing that you are using too few data for assembling animal_mt!
+2019-06-23 23:37:03,759 - WARNING: GetOrganelle is still trying ...
+2019-06-23 23:37:03,759 - INFO: Estimated word size(s): 41
+2019-06-23 23:37:03,760 - INFO: Setting '-w 41'
+2019-06-23 23:37:03,760 - INFO: Setting '--max-extending-len inf'
+2019-06-23 23:37:03,869 - INFO: Checking seed reads and parameters finished.
+
+2019-06-23 23:37:03,869 - INFO: Making read index ...
+2019-06-24 00:14:32,622 - INFO: Mem 18.846 G, 143696655 candidates in all 150000000 reads
+2019-06-24 00:14:33,181 - INFO: Reads are stored as fragments.
+2019-06-24 00:14:33,182 - INFO: Pre-grouping reads ...
+2019-06-24 00:14:33,182 - INFO: Setting '--pre-w 41'
+2019-06-24 00:14:54,781 - INFO: Mem 17.591 G, 200000/5992073 used/duplicated
+2019-06-24 00:15:52,038 - INFO: Mem 19.539 G, 36038 groups made.
+2019-06-24 00:16:45,235 - INFO: Making read index finished.
+
+2019-06-24 00:16:45,237 - INFO: Extending ...
+2019-06-24 00:16:45,237 - INFO: Adding initial words ...
+2019-06-24 00:16:45,253 - INFO: AW 10008
+2019-06-24 00:29:12,812 - INFO: Round 1: 52736433/143696655 AI 9939761 AW 200596960 Mem 27.722
+2019-06-24 00:29:12,812 - INFO: Hit the words limit and terminated ...
+2019-06-24 00:29:12,812 - WARNING: Terminated at an insufficient number of rounds, see '--max-n-words' for more.
+2019-06-24 00:42:46,426 - INFO: Extending finished.
+
+2019-06-24 00:42:53,219 - INFO: Separating filtered fastq file ... 
+2019-06-24 00:43:41,210 - WARNING: No paired reads found?!
+2019-06-24 00:43:41,692 - INFO: Setting '-k 21,43,65,87'
+2019-06-24 00:43:41,692 - INFO: Assembling using SPAdes ...
+2019-06-24 09:40:43,684 - INFO: Assembling finished.
+
+2019-06-24 09:40:43,685 - INFO: Slimming assembly graphs ...
+2019-06-24 09:41:01,169 - WARNING: Slimming auto--ERR466754-mitogenome/filtered_spades/K87/assembly_graph.fastg finished with no target organelle contigs found!
+2019-06-24 09:44:36,325 - WARNING: Slimming auto--ERR466754-mitogenome/filtered_spades/K65/assembly_graph.fastg finished with no target organelle contigs found!
+2019-06-24 09:44:44,478 - WARNING: Slimming auto--ERR466754-mitogenome/filtered_spades/K43/assembly_graph.fastg finished with no target organelle contigs found!
+2019-06-24 09:44:44,479 - WARNING: No target organelle contigs found!
+2019-06-24 09:44:44,479 - WARNING: This might due to unreasonable seed/parameter choices or a bug.
+2019-06-24 09:44:44,479 - INFO: Please email phylojin@163.com or jinjianjun@mail.kib.ac.cn with the get_org.log.txt file.
+
+
+Total cost 43064.48 s
+Thank you!

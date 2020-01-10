@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 ../SRR5602609_1.fastq.gz -2 ../SRR5602609_2.fastq.gz -o auto--SRR5602609-plastome/auto--SRR5602609-plastome--evaluated -f auto--SRR5602609-plastome/embplant_pt.K127.contigs.graph1.1.path_sequence.fasta -t 1 --continue --draw --plot-title SRR5602609-GetOrganelle --plot-subtitle "Arguments: -R 10 -t 1 -k 21,55,91,127     Result status: 1 contig(s)"
+
+2019-06-25 22:02:49,319 - INFO: Making  - bowtie2 index ...
+2019-06-25 22:02:49,593 - INFO: Making  - bowtie2 index finished.
+2019-06-25 22:02:49,593 - INFO: Mapping reads to  bowtie2 index ...
+2019-06-25 22:05:11,078 - INFO: Mapping finished.
+2019-06-25 22:05:11,079 - INFO: Reference length: 144567 (144567)
+2019-06-25 22:05:16,013 - INFO: # mapped reads: 19033×2+1361
+2019-06-25 22:05:16,013 - INFO: # mapped pairs: 19033
+2019-06-25 22:05:16,013 - INFO: Aligned: 80.25±21.66 (80.25±21.66)
+2019-06-25 22:05:16,013 - INFO: Mismatched: 2.47±2.58 (2.47±2.58)
+2019-06-25 22:05:16,013 - INFO: Inserted: 0.04±1.32 (0.04±1.32)
+2019-06-25 22:05:16,013 - INFO: Deleted: 0.02±0.25 (0.02±0.25)
+2019-06-25 22:05:16,013 - INFO: Customized error rate: 0.0315±0.0366 (0.0315±0.0366)
+

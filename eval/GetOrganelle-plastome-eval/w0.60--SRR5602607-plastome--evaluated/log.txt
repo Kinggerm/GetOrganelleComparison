@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 ../SRR5602607_1.fastq.gz -2 ../SRR5602607_2.fastq.gz -o w0.60--SRR5602607-plastome/w0.60--SRR5602607-plastome--evaluated -f w0.60--SRR5602607-plastome/embplant_pt.K127.complete.graph1.1.path_sequence.fasta -t 1 --continue --draw --plot-title SRR5602607-GetOrganelle --plot-subtitle "Arguments: -R 10 -t 1 -k 21,55,91,127 -w 0.60     Result status: circular genome"
+
+2019-06-25 22:25:34,818 - INFO: Making  - bowtie2 index ...
+2019-06-25 22:25:35,163 - INFO: Making  - bowtie2 index finished.
+2019-06-25 22:25:35,163 - INFO: Mapping reads to  bowtie2 index ...
+2019-06-25 22:27:21,013 - INFO: Mapping finished.
+2019-06-25 22:27:21,014 - INFO: Reference length: 143187 (143187)
+2019-06-25 22:27:24,166 - INFO: # mapped reads: 16223×2+754
+2019-06-25 22:27:24,166 - INFO: # mapped pairs: 16223
+2019-06-25 22:27:24,166 - INFO: Aligned: 34.88±6.69 (34.88±6.69)
+2019-06-25 22:27:24,166 - INFO: Mismatched: 0.29±0.65 (0.29±0.65)
+2019-06-25 22:27:24,166 - INFO: Inserted: 0.01±0.22 (0.01±0.22)
+2019-06-25 22:27:24,166 - INFO: Deleted: 0.01±0.14 (0.01±0.14)
+2019-06-25 22:27:24,166 - INFO: Customized error rate: 0.0087±0.0202 (0.0087±0.0202)
+

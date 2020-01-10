@@ -1,0 +1,101 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR5602610_1.fastq.gz -2 SRR5602610_2.fastq.gz -F embplant_pt -o w0.70--SRR5602610-plastome -R 10 -t 1 -k 21,55,91,127 -w 0.70
+
+2019-06-25 01:38:56,997 - INFO: Pre-reading fastq ...
+2019-06-25 01:38:56,997 - INFO: Estimating reads to use ...
+2019-06-25 01:38:58,016 - INFO: Estimating reads to use finished.
+2019-06-25 01:38:58,017 - INFO: Unzipping reads file: SRR5602610_1.fastq.gz (208907452 bytes)
+2019-06-25 01:39:04,871 - INFO: Unzipping reads file: SRR5602610_2.fastq.gz (248799863 bytes)
+2019-06-25 01:39:12,147 - INFO: Counting read qualities ...
+2019-06-25 01:39:12,426 - INFO: Identified quality encoding format = Sanger
+2019-06-25 01:39:12,428 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-06-25 01:39:12,588 - INFO: Mean error rate = 0.0046
+2019-06-25 01:39:12,591 - INFO: Counting read lengths ...
+2019-06-25 01:39:17,798 - INFO: Mean = 246.4 bp, maximum = 250 bp.
+2019-06-25 01:39:17,799 - INFO: Reads used = 1240196+1240196
+2019-06-25 01:39:17,800 - INFO: Pre-reading fastq finished.
+
+2019-06-25 01:39:17,800 - INFO: Making seed reads ...
+2019-06-25 01:39:17,801 - INFO: Seed bowtie2 index existed!
+2019-06-25 01:39:17,801 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-25 01:40:53,770 - INFO: Mapping finished.
+2019-06-25 01:40:53,771 - INFO: Seed reads made: w0.70--SRR5602610-plastome/seed/embplant_pt.initial.fq (2272840 bytes)
+2019-06-25 01:40:53,771 - INFO: Making seed reads finished.
+
+2019-06-25 01:40:53,772 - INFO: Checking seed reads and parameters ...
+2019-06-25 01:40:56,070 - INFO: Estimated embplant_pt-hitting base-coverage = 8.09
+2019-06-25 01:40:56,071 - INFO: Setting '-w 173'
+2019-06-25 01:40:56,071 - INFO: Setting '--max-extending-len inf'
+2019-06-25 01:40:56,130 - INFO: Checking seed reads and parameters finished.
+
+2019-06-25 01:40:56,130 - INFO: Making read index ...
+2019-06-25 01:41:31,266 - INFO: Mem 1.216 G, 2396025 candidates in all 2480392 reads
+2019-06-25 01:41:31,272 - INFO: Pre-grouping reads ...
+2019-06-25 01:41:31,272 - INFO: Setting '--pre-w 173'
+2019-06-25 01:41:31,955 - INFO: Mem 1.137 G, 59919/59919 used/duplicated
+2019-06-25 01:41:45,844 - INFO: Mem 2.052 G, 309 groups made.
+2019-06-25 01:41:46,446 - INFO: Making read index finished.
+
+2019-06-25 01:41:46,446 - INFO: Extending ...
+2019-06-25 01:41:46,447 - INFO: Adding initial words ...
+2019-06-25 01:41:47,171 - INFO: AW 317572
+2019-06-25 01:42:32,426 - INFO: Round 1: 2396025/2396025 AI 5425 AW 356800 Mem 0.519
+2019-06-25 01:43:18,333 - INFO: Round 2: 2396025/2396025 AI 5982 AW 375528 Mem 0.519
+2019-06-25 01:44:03,767 - INFO: Round 3: 2396025/2396025 AI 6212 AW 383604 Mem 0.519
+2019-06-25 01:44:45,324 - INFO: Round 4: 2396025/2396025 AI 6368 AW 389790 Mem 0.519
+2019-06-25 01:45:27,795 - INFO: Round 5: 2396025/2396025 AI 6441 AW 392782 Mem 0.519
+2019-06-25 01:46:12,410 - INFO: Round 6: 2396025/2396025 AI 6508 AW 395444 Mem 0.519
+2019-06-25 01:46:50,175 - INFO: Round 7: 2396025/2396025 AI 6553 AW 397034 Mem 0.519
+2019-06-25 01:47:33,563 - INFO: Round 8: 2396025/2396025 AI 6586 AW 398318 Mem 0.519
+2019-06-25 01:48:15,310 - INFO: Round 9: 2396025/2396025 AI 6618 AW 399074 Mem 0.519
+2019-06-25 01:48:59,091 - INFO: Round 10: 2396025/2396025 AI 6629 AW 399542 Mem 0.519
+2019-06-25 01:48:59,092 - INFO: Hit the round limit 10 and terminated ...
+2019-06-25 01:49:09,213 - INFO: Extending finished.
+
+2019-06-25 01:49:09,636 - INFO: Separating filtered fastq file ... 
+2019-06-25 01:49:09,990 - INFO: Setting '-k 21,55,91,127'
+2019-06-25 01:49:09,990 - INFO: Assembling using SPAdes ...
+2019-06-25 01:49:35,064 - INFO: Insert size = 428.842, deviation = 160.123, left quantile = 247, right quantile = 654
+2019-06-25 01:49:35,064 - INFO: Assembling finished.
+
+2019-06-25 01:49:35,065 - INFO: Slimming assembly graphs ...
+2019-06-25 01:49:36,997 - INFO: Slimming w0.70--SRR5602610-plastome/filtered_spades/K127/assembly_graph.fastg finished!
+2019-06-25 01:49:39,159 - INFO: Slimming w0.70--SRR5602610-plastome/filtered_spades/K91/assembly_graph.fastg finished!
+2019-06-25 01:49:41,109 - INFO: Slimming w0.70--SRR5602610-plastome/filtered_spades/K55/assembly_graph.fastg finished!
+2019-06-25 01:49:41,109 - INFO: Slimming assembly graphs finished
+
+2019-06-25 01:49:41,110 - INFO: Extracting embplant_pt from the assemblies ...
+2019-06-25 01:49:41,110 - INFO: Disentangling w0.70--SRR5602610-plastome/filtered_spades/K127/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-06-25 01:49:41,211 - INFO: Disentangling failed: 'Multiple isolated embplant_pt components detected! Broken or contamination?'
+2019-06-25 01:49:41,212 - INFO: Disentangling w0.70--SRR5602610-plastome/filtered_spades/K91/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-06-25 01:49:41,363 - INFO: Disentangling failed: 'Multiple isolated embplant_pt components detected! Broken or contamination?'
+2019-06-25 01:49:41,363 - INFO: Disentangling w0.70--SRR5602610-plastome/filtered_spades/K55/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-06-25 01:49:41,517 - INFO: Disentangling failed: 'Multiple isolated embplant_pt components detected! Broken or contamination?'
+2019-06-25 01:49:41,521 - INFO: Disentangling w0.70--SRR5602610-plastome/filtered_spades/K127/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as contig(s) ... 
+2019-06-25 01:49:42,141 - INFO: Average embplant_pt kmer-coverage = 7.127
+2019-06-25 01:49:42,142 - INFO: Average embplant_pt base-coverage = 14.583
+2019-06-25 01:49:42,142 - INFO: Writing output ...
+2019-06-25 01:49:42,152 - INFO: Writing PATH1 of embplant_pt contig(s) to w0.70--SRR5602610-plastome/embplant_pt.K127.contigs.graph1.1.path_sequence.fasta
+2019-06-25 01:49:42,153 - INFO: Writing GRAPH to w0.70--SRR5602610-plastome/embplant_pt.K127.contigs.graph1.selected_graph.gfa
+2019-06-25 01:49:42,190 - INFO: Result status of embplant_pt: 24 contig(s)
+2019-06-25 01:49:42,328 - INFO: Writing output finished.
+2019-06-25 01:49:42,329 - INFO: Please ...
+2019-06-25 01:49:42,329 - INFO: load the graph file 'assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg' in K127,K91,K55
+2019-06-25 01:49:42,329 - INFO: load the CSV file 'assembly_graph.fastg.extend-embplant_pt-embplant_mt.csv' in K127,K91,K55
+2019-06-25 01:49:42,329 - INFO: visualize and confirm the incomplete result in Bandage.
+2019-06-25 01:49:42,329 - INFO: If the result is nearly complete, 
+2019-06-25 01:49:42,329 - INFO: you can also adjust the arguments to try again.
+2019-06-25 01:49:42,329 - INFO: If you have questions for us, please provide us with the get_org.log.txt file and the graph in the format you like!
+2019-06-25 01:49:42,330 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 645.66 s
+Thank you!

@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 ../ERR2206741_1.fastq.gz -2 ../ERR2206741_2.fastq.gz -o w0.80--ERR2206741-plastome/w0.80--ERR2206741-plastome--evaluated -f w0.80--ERR2206741-plastome/embplant_pt.K91.contigs.graph1.1.path_sequence.fasta -t 1 --continue --draw --plot-title ERR2206741-GetOrganelle --plot-subtitle "Arguments: -R 10 -t 1 -k 21,55,91,127 -w 0.80     Result status: 2 contig(s)"
+
+2019-06-26 00:01:15,912 - INFO: Making  - bowtie2 index ...
+2019-06-26 00:01:16,289 - INFO: Making  - bowtie2 index finished.
+2019-06-26 00:01:16,289 - INFO: Mapping reads to  bowtie2 index ...
+2019-06-26 00:06:53,743 - INFO: Mapping finished.
+2019-06-26 00:06:53,744 - INFO: Reference length: 187563 (91397, 96166)
+2019-06-26 00:07:10,893 - INFO: # mapped reads: 129324×2+7297
+2019-06-26 00:07:10,893 - INFO: # mapped pairs: 129324
+2019-06-26 00:07:10,894 - INFO: Aligned: 143.18±48.86 (128.14±50.82, 157.48±42.23)
+2019-06-26 00:07:10,894 - INFO: Mismatched: 0.36±1.00 (0.32±0.93, 0.40±1.07)
+2019-06-26 00:07:10,894 - INFO: Inserted: 0.02±0.46 (0.03±0.53, 0.02±0.38)
+2019-06-26 00:07:10,894 - INFO: Deleted: 0.01±0.25 (0.01±0.29, 0.01±0.20)
+2019-06-26 00:07:10,894 - INFO: Customized error rate: 0.0028±0.0081 (0.0028±0.0088, 0.0028±0.0074)
+

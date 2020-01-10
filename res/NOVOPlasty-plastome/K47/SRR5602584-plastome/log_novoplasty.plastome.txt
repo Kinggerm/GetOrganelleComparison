@@ -1,0 +1,75 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.plastome
+Type                  = chloro
+Genome range          = 15000-180000
+K-mer                 = 47
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/plant_cp.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 248.2
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR5602584_1.fastq.gz
+Reverse reads         = ../../../SRR5602584_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+Forward reads without pair: 100
+Reverse reads without pair: 30
+
+Initial read retrieved successfully: TCTTCTTGCCCGAATCTGTAACCTTCATTAGCAGATTCATTTTCTGTGGTTTCCCTGATCAAACTAGAAGTTACCAAGGAACCATGCATAGCACTGAATAGGGAGCCGCCGAATACACCAGCTACGCCTAACATGTGAAATGGGTGCATAAGGATGTTGTGCTCAGCCTGGAATACAATCATGAAGTTGAAAGTACCAGAAATTCCTAGAGGCATACCATCAGAAAAACTTCCTTGACCGATTGGG
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 134890 bp
+Contig 02                  : 18904 bp
+Contig 03                  : 18582 bp
+
+Total contigs              : 3
+Largest contig             : 134890 bp
+Smallest contig            : 18582 bp
+Average insert size        : 585 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 3397414
+Aligned reads              : 67774
+Assembled reads            : 51230
+Organelle genome %         : 1.99 %
+Average organelle coverage : 110
+
+----------------------------------------------------------------------------------------------------
+

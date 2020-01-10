@@ -1,0 +1,27 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+215500----> 20 OR 22
+02----> 06 OR 03
+10----> 11 OR 114463
+START----> 01
+09----> 83172452 OR 25
+08----> 10 OR 25
+17----> 245861 OR 21
+05----> 17 OR 18
+11----> 19 OR 23
+15----> 215500 OR 16
+06----> 08 OR 07
+04----> 12 OR 13
+03----> 05 OR 04
+07----> 2556 OR 09
+01----> REPETITIVE REGION----> 02
+16----> 20 OR 22
+
+(Contigs broken up by long homopolymer stretches are linked together as one contig with 15 N's, they can be merged manually in some cases)
+
+(If the region before and after the N zone overlaps, you can merge them by deleting the regions next to N zone from both sides (those are the least reliable))
+
+
+
+Each option has a separate fasta file

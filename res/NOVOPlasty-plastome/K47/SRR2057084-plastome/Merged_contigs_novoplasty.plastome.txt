@@ -1,0 +1,72 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+27----> 32 OR 68
+36----> 212284 OR 62528051
+30----> 31 OR 42
+15----> 45
+47----> 2273 OR 48
+START----> 01
+23----> 24 OR 25 OR 27
+09----> 19 OR 41
+41----> 87 OR 60
+57----> 22 OR 10 OR 10
+49----> 123 OR 88
+13----> 15 OR 17
+32----> 33 OR 11813
+48----> 78 OR 65 OR 2182 OR 103 OR 55 OR 50
+40----> 93 OR 100
+34----> 37 OR 69
+68----> 95 OR 94 OR 18662
+07----> 10 OR 40 OR 124 OR 22 OR 08
+50----> 2445 OR 120
+59----> 111 OR 102
+12----> 99 OR 89
+03----> 09 OR 05
+25----> 82 OR 26
+33----> 2315 OR 1315
+46----> 51 OR 72
+54----> 2110 OR 1110 OR 08
+14----> 15 OR 17
+06----> 53 OR 115
+22----> 125 OR 79
+26----> 2371 OR 1371
+39----> 105 OR 44
+56----> 35 OR 34
+29----> 31 OR 42
+01----> 66296011 OR 70
+55----> 121 OR 101
+28----> 29 OR 30
+44----> 58 OR 56
+02----> 20 OR 21 OR 07
+35----> 37 OR 69
+05----> 122 OR 06
+52----> 111 OR 102
+60----> 85 OR 91 OR 2188 OR 97
+24----> 67389511 OR 1274
+04----> 36 OR 108
+69----> 29302 OR 118
+51----> 86 OR 57 OR 106 OR 54
+08----> 12 OR 1374
+10----> 92 OR 11
+58----> 35 OR 34
+37----> 46 OR 38
+66----> 73 OR 112
+38----> 117 OR 116 OR 2151 OR 39
+63----> 76 OR 96
+42----> 110 OR 64 OR 49 OR 43
+31----> 35 OR 34
+43----> 66 OR 67
+45----> 47 OR 80
+64----> 106 OR 1223 OR 54
+67----> 73 OR 112
+16----> 107 OR 81
+11----> 13 OR 22728851 OR 14 OR 18 OR 113
+
+(Contigs broken up by long homopolymer stretches are linked together as one contig with 15 N's, they can be merged manually in some cases)
+
+(If the region before and after the N zone overlaps, you can merge them by deleting the regions next to N zone from both sides (those are the least reliable))
+
+
+
+Each option has a separate fasta file

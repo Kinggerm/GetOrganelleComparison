@@ -1,0 +1,48 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR941879_1.fastq.gz -2 SRR941879_2.fastq.gz -F animal_mt -o auto--SRR941879-mitogenome -R 10 -t 1 -k 21,43,65,87,127
+
+2019-06-23 20:01:13,398 - INFO: Pre-reading fastq ...
+2019-06-23 20:01:13,398 - INFO: Estimating reads to use ...
+2019-06-23 20:01:14,743 - INFO: Tasting 100000+100000 reads ...
+2019-06-23 20:03:20,784 - INFO: Tasting 500000+500000 reads ...
+2019-06-23 20:06:20,210 - INFO: Tasting 2500000+2500000 reads ...
+2019-06-23 20:13:15,935 - INFO: Tasting 12500000+12500000 reads ...
+2019-06-23 20:32:14,670 - INFO: Estimating reads to use finished.
+2019-06-23 20:32:14,671 - INFO: Unzipping reads file: SRR941879_1.fastq.gz (1974924712 bytes)
+2019-06-23 20:32:19,641 - INFO: Unzipping reads file: SRR941879_2.fastq.gz (2011801366 bytes)
+2019-06-23 20:32:24,269 - INFO: Counting read qualities ...
+2019-06-23 20:32:24,497 - INFO: Identified quality encoding format = Sanger
+2019-06-23 20:32:24,498 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-06-23 20:32:24,608 - INFO: Mean error rate = 0.0397
+2019-06-23 20:32:24,610 - INFO: Counting read lengths ...
+2019-06-23 20:32:37,805 - INFO: Mean = 95.0 bp, maximum = 95 bp.
+2019-06-23 20:32:37,806 - INFO: Reads used = 2254564+2254564
+2019-06-23 20:32:37,806 - INFO: Pre-reading fastq finished.
+
+2019-06-23 20:32:37,806 - INFO: Making seed reads ...
+2019-06-23 20:32:37,807 - INFO: Seed bowtie2 index existed!
+2019-06-23 20:32:37,807 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-23 20:34:15,197 - INFO: Mapping finished.
+2019-06-23 20:34:15,198 - INFO: Seed reads made: auto--SRR941879-mitogenome/seed/animal_mt.initial.fq (1256 bytes)
+2019-06-23 20:34:15,198 - ERROR: Too few seed reads found! Please change your seed file (-s) or increase your data input (--max-reads/--reduce-reads-for-coverage)!
+2019-06-23 20:34:15,198 - ERROR: 
+Traceback (most recent call last):
+  File "/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py", line 3596, in main
+    log_handler=log_handler)
+  File "/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py", line 2876, in making_seed_reads_using_mapping
+    exit()
+  File "/data/jinjianjun/.pyenv/versions/3.6.5/lib/python3.6/_sitebuiltins.py", line 26, in __call__
+    raise SystemExit(code)
+SystemExit: None
+
+Total cost 1982.26 s
+Please email phylojin@163.com or jinjianjun@mail.kib.ac.cn if you find bugs!
+Please provide me with the get_org.log.txt file!

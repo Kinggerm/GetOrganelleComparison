@@ -1,0 +1,92 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR2730309_1.fastq.gz -2 SRR2730309_2.fastq.gz -F animal_mt -o auto--SRR2730309-mitogenome -R 10 -t 1 -k 21,43,65,87,127
+
+2019-06-24 06:19:34,531 - INFO: Pre-reading fastq ...
+2019-06-24 06:19:34,531 - INFO: Estimating reads to use ...
+2019-06-24 06:19:35,355 - INFO: Tasting 100000+100000 reads ...
+2019-06-24 06:21:12,332 - INFO: Tasting 500000+500000 reads ...
+2019-06-24 06:21:57,749 - INFO: Tasting 2500000+2500000 reads ...
+2019-06-24 06:25:06,155 - INFO: Estimating reads to use finished.
+2019-06-24 06:25:06,156 - INFO: Unzipping reads file: SRR2730309_1.fastq.gz (6102369951 bytes)
+2019-06-24 06:28:18,963 - INFO: Unzipping reads file: SRR2730309_2.fastq.gz (6089523279 bytes)
+2019-06-24 06:31:15,088 - INFO: Counting read qualities ...
+2019-06-24 06:31:15,220 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-06-24 06:31:15,221 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-06-24 06:31:15,290 - INFO: Mean error rate = 0.0887
+2019-06-24 06:31:15,295 - INFO: Counting read lengths ...
+2019-06-24 06:35:32,002 - INFO: Mean = 100.9 bp, maximum = 101 bp.
+2019-06-24 06:35:32,003 - INFO: Reads used = 75000000+75000000
+2019-06-24 06:35:32,003 - INFO: Pre-reading fastq finished.
+
+2019-06-24 06:35:32,003 - INFO: Making seed reads ...
+2019-06-24 06:35:32,004 - INFO: Seed bowtie2 index existed!
+2019-06-24 06:35:32,004 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-24 07:32:47,980 - INFO: Mapping finished.
+2019-06-24 07:32:47,980 - INFO: Seed reads made: auto--SRR2730309-mitogenome/seed/animal_mt.initial.fq (6882858 bytes)
+2019-06-24 07:32:47,981 - INFO: Making seed reads finished.
+
+2019-06-24 07:32:47,981 - INFO: Checking seed reads and parameters ...
+2019-06-24 07:32:47,981 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2019-06-24 07:32:47,981 - INFO: If the result graph is not a circular organelle genome, 
+2019-06-24 07:32:47,981 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2019-06-24 07:32:52,319 - INFO: Pre-assembling mapped reads ...
+2019-06-24 07:33:08,057 - INFO: Pre-assembling mapped reads finished.
+2019-06-24 07:33:08,058 - INFO: Estimated animal_mt-hitting base-coverage = 64.75
+2019-06-24 07:33:08,058 - INFO: Estimated word size(s): 42
+2019-06-24 07:33:08,058 - INFO: Setting '-w 42'
+2019-06-24 07:33:08,058 - INFO: Setting '--max-extending-len inf'
+2019-06-24 07:33:08,177 - INFO: Checking seed reads and parameters finished.
+
+2019-06-24 07:33:08,178 - INFO: Making read index ...
+2019-06-24 08:05:01,715 - INFO: Mem 19.088 G, 146720298 candidates in all 150000000 reads
+2019-06-24 08:05:02,262 - INFO: Pre-grouping reads ...
+2019-06-24 08:05:02,262 - INFO: Setting '--pre-w 42'
+2019-06-24 08:05:22,483 - INFO: Mem 17.657 G, 200000/1905177 used/duplicated
+2019-06-24 08:06:18,310 - INFO: Mem 18.918 G, 3395 groups made.
+2019-06-24 08:07:07,979 - INFO: Making read index finished.
+
+2019-06-24 08:07:07,979 - INFO: Extending ...
+2019-06-24 08:07:07,980 - INFO: Adding initial words ...
+2019-06-24 08:07:09,205 - INFO: AW 767046
+2019-06-24 08:21:19,282 - INFO: Round 1: 69985441/146720298 AI 9135997 AW 200110492 Mem 27.936
+2019-06-24 08:21:19,282 - INFO: Hit the words limit and terminated ...
+2019-06-24 08:21:19,282 - WARNING: Terminated at an insufficient number of rounds, see '--max-n-words' for more.
+2019-06-24 08:33:34,770 - INFO: Extending finished.
+
+2019-06-24 08:33:43,261 - INFO: Separating filtered fastq file ... 
+2019-06-24 08:34:31,022 - WARNING: No paired reads found?!
+2019-06-24 08:34:31,364 - INFO: Setting '-k 21,43,65,87'
+2019-06-24 08:34:31,364 - INFO: Assembling using SPAdes ...
+2019-06-24 15:51:57,654 - INFO: Assembling finished.
+
+2019-06-24 15:51:57,654 - INFO: Slimming assembly graphs ...
+2019-06-24 15:52:27,023 - INFO: Slimming auto--SRR2730309-mitogenome/filtered_spades/K87/assembly_graph.fastg finished!
+2019-06-24 15:53:15,566 - INFO: Slimming auto--SRR2730309-mitogenome/filtered_spades/K65/assembly_graph.fastg finished!
+2019-06-24 15:54:06,290 - INFO: Slimming auto--SRR2730309-mitogenome/filtered_spades/K43/assembly_graph.fastg finished!
+2019-06-24 15:54:06,291 - INFO: Slimming assembly graphs finished
+
+2019-06-24 15:54:06,291 - INFO: Extracting animal_mt from the assemblies ...
+2019-06-24 15:54:06,292 - INFO: Disentangling auto--SRR2730309-mitogenome/filtered_spades/K87/assembly_graph.fastg.extend-animal_mt.fastg as a circular genome ... 
+2019-06-24 15:54:06,306 - INFO: Disentangling timeout. (see '--disentangle-time-limit' for more)
+2019-06-24 15:54:06,307 - INFO: Disentangling auto--SRR2730309-mitogenome/filtered_spades/K65/assembly_graph.fastg.extend-animal_mt.fastg as a circular genome ... 
+2019-06-24 15:54:06,343 - INFO: Average animal_mt kmer-coverage = 132.172
+2019-06-24 15:54:06,343 - INFO: Average animal_mt base-coverage = 361.28
+2019-06-24 15:54:06,343 - INFO: Writing output ...
+2019-06-24 15:54:06,366 - INFO: Writing PATH1 of complete animal_mt to auto--SRR2730309-mitogenome/animal_mt.K65.complete.graph1.1.path_sequence.fasta
+2019-06-24 15:54:06,367 - INFO: Writing GRAPH to auto--SRR2730309-mitogenome/animal_mt.K65.complete.graph1.selected_graph.gfa
+2019-06-24 15:54:06,397 - INFO: Result status of animal_mt: circular genome
+2019-06-24 15:54:06,515 - INFO: Please visualize auto--SRR2730309-mitogenome/filtered_K65.assembly_graph.fastg.extend-animal_mt.fastg using Bandage to confirm the final result.
+2019-06-24 15:54:06,516 - INFO: Writing output finished.
+2019-06-24 15:54:06,516 - INFO: Extracting animal_mt from the assemblies finished.
+
+
+Total cost 34472.41 s
+Thank you!

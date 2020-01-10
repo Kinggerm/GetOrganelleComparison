@@ -1,0 +1,16 @@
+GetOrganelle v1.6.2
+
+This is a script for extracting organelle genomes from slim_fastg.py-produced files (csv & fastg). 
+By jinjianjun@mail.kib.ac.cn
+
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/disentangle_organelle_assembly.py -g customized--ERR964904-plastome/filtered_K85.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg -t customized--ERR964904-plastome/filtered_K85.assembly_graph.fastg.extend-embplant_pt-embplant_mt.csv --prefix embplant_pt.K85.complete -o customized--ERR964904-plastome -F embplant_pt --weight-f 3 --min-depth 16
+
+2019-06-25 21:55:00,425 - INFO: >>> Parsing customized--ERR964904-plastome/filtered_K85.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg ..
+2019-06-25 21:55:00,457 - INFO: >>> Parsing input fastg file finished: 0.0319s
+2019-06-25 21:55:04,087 - INFO: Average embplant_pt kmer-coverage = 24.519
+2019-06-25 21:55:04,087 - INFO: >>> Detecting target graph finished: 3.6298s
+2019-06-25 21:55:04,099 - INFO: >>> Solving and unfolding graph finished: 0.0122s
+
+Total cost: 3.6759s
+

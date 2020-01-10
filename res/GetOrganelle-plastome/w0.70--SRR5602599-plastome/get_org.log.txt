@@ -1,0 +1,91 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR5602599_1.fastq.gz -2 SRR5602599_2.fastq.gz -F embplant_pt -o w0.70--SRR5602599-plastome -R 10 -t 1 -k 21,55,91,127 -w 0.70
+
+2019-06-25 05:23:34,966 - INFO: Pre-reading fastq ...
+2019-06-25 05:23:34,966 - INFO: Estimating reads to use ...
+2019-06-25 05:23:36,238 - INFO: Tasting 100000+100000 reads ...
+2019-06-25 05:24:10,977 - INFO: Estimating reads to use finished.
+2019-06-25 05:24:10,978 - INFO: Unzipping reads file: SRR5602599_1.fastq.gz (351317783 bytes)
+2019-06-25 05:24:23,082 - INFO: Unzipping reads file: SRR5602599_2.fastq.gz (434601481 bytes)
+2019-06-25 05:24:35,992 - INFO: Counting read qualities ...
+2019-06-25 05:24:36,276 - INFO: Identified quality encoding format = Sanger
+2019-06-25 05:24:36,278 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-06-25 05:24:36,428 - INFO: Mean error rate = 0.0019
+2019-06-25 05:24:36,434 - INFO: Counting read lengths ...
+2019-06-25 05:24:46,788 - INFO: Mean = 248.2 bp, maximum = 250 bp.
+2019-06-25 05:24:46,789 - INFO: Reads used = 2543909+2543909
+2019-06-25 05:24:46,789 - INFO: Pre-reading fastq finished.
+
+2019-06-25 05:24:46,789 - INFO: Making seed reads ...
+2019-06-25 05:24:46,790 - INFO: Seed bowtie2 index existed!
+2019-06-25 05:24:46,790 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-25 05:30:30,431 - INFO: Mapping finished.
+2019-06-25 05:30:30,432 - INFO: Seed reads made: w0.70--SRR5602599-plastome/seed/embplant_pt.initial.fq (52381806 bytes)
+2019-06-25 05:30:30,432 - INFO: Making seed reads finished.
+
+2019-06-25 05:30:30,432 - INFO: Checking seed reads and parameters ...
+2019-06-25 05:30:46,368 - INFO: Estimated embplant_pt-hitting base-coverage = 140.12
+2019-06-25 05:30:46,368 - INFO: Setting '-w 174'
+2019-06-25 05:30:46,368 - INFO: Setting '--max-extending-len inf'
+2019-06-25 05:30:46,635 - INFO: Checking seed reads and parameters finished.
+
+2019-06-25 05:30:46,635 - INFO: Making read index ...
+2019-06-25 05:32:03,562 - INFO: Mem 2.439 G, 4981128 candidates in all 5087818 reads
+2019-06-25 05:32:03,576 - INFO: Pre-grouping reads ...
+2019-06-25 05:32:03,576 - INFO: Setting '--pre-w 174'
+2019-06-25 05:32:04,523 - INFO: Mem 2.245 G, 62159/62159 used/duplicated
+2019-06-25 05:32:21,935 - INFO: Mem 2.601 G, 736 groups made.
+2019-06-25 05:32:23,730 - INFO: Making read index finished.
+
+2019-06-25 05:32:23,730 - INFO: Extending ...
+2019-06-25 05:32:23,731 - INFO: Adding initial words ...
+2019-06-25 05:32:35,707 - INFO: AW 1808242
+2019-06-25 05:34:09,182 - INFO: Round 1: 4981128/4981128 AI 88815 AW 1856666 Mem 0.765
+2019-06-25 05:35:33,195 - INFO: Round 2: 4981128/4981128 AI 88906 AW 1858712 Mem 0.765
+2019-06-25 05:36:45,203 - INFO: Round 3: 4981128/4981128 AI 88917 AW 1859266 Mem 0.765
+2019-06-25 05:38:11,489 - INFO: Round 4: 4981128/4981128 AI 88921 AW 1859424 Mem 0.765
+2019-06-25 05:39:33,908 - INFO: Round 5: 4981128/4981128 AI 88921 AW 1859424 Mem 0.765
+2019-06-25 05:39:33,908 - INFO: No more reads found and terminated ...
+2019-06-25 05:39:55,713 - INFO: Extending finished.
+
+2019-06-25 05:39:56,471 - INFO: Separating filtered fastq file ... 
+2019-06-25 05:39:57,488 - INFO: Setting '-k 21,55,91,127'
+2019-06-25 05:39:57,488 - INFO: Assembling using SPAdes ...
+2019-06-25 05:43:07,645 - INFO: Insert size = 588.979, deviation = 151.868, left quantile = 396, right quantile = 780
+2019-06-25 05:43:07,645 - INFO: Assembling finished.
+
+2019-06-25 05:43:07,645 - INFO: Slimming assembly graphs ...
+2019-06-25 05:43:09,420 - INFO: Slimming w0.70--SRR5602599-plastome/filtered_spades/K127/assembly_graph.fastg finished!
+2019-06-25 05:43:11,328 - INFO: Slimming w0.70--SRR5602599-plastome/filtered_spades/K91/assembly_graph.fastg finished!
+2019-06-25 05:43:13,226 - INFO: Slimming w0.70--SRR5602599-plastome/filtered_spades/K55/assembly_graph.fastg finished!
+2019-06-25 05:43:13,226 - INFO: Slimming assembly graphs finished
+
+2019-06-25 05:43:13,227 - INFO: Extracting embplant_pt from the assemblies ...
+2019-06-25 05:43:13,228 - INFO: Disentangling w0.70--SRR5602599-plastome/filtered_spades/K127/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-06-25 05:43:14,015 - INFO: Vertex_50952 #copy = 1
+2019-06-25 05:43:14,015 - INFO: Vertex_50968 #copy = 1
+2019-06-25 05:43:14,015 - INFO: Vertex_50992 #copy = 2
+2019-06-25 05:43:14,016 - INFO: Average embplant_pt kmer-coverage = 89.916
+2019-06-25 05:43:14,016 - INFO: Average embplant_pt base-coverage = 182.654
+2019-06-25 05:43:14,016 - INFO: Writing output ...
+2019-06-25 05:43:14,165 - WARNING: More than one circular genome structure produced ...
+2019-06-25 05:43:14,166 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2019-06-25 05:43:14,170 - INFO: Writing PATH1 of complete embplant_pt to w0.70--SRR5602599-plastome/embplant_pt.K127.complete.graph1.1.path_sequence.fasta
+2019-06-25 05:43:14,174 - INFO: Writing PATH2 of complete embplant_pt to w0.70--SRR5602599-plastome/embplant_pt.K127.complete.graph1.2.path_sequence.fasta
+2019-06-25 05:43:14,174 - INFO: Writing GRAPH to w0.70--SRR5602599-plastome/embplant_pt.K127.complete.graph1.selected_graph.gfa
+2019-06-25 05:43:14,202 - INFO: Result status of embplant_pt: circular genome
+2019-06-25 05:43:14,292 - INFO: Please visualize w0.70--SRR5602599-plastome/filtered_K127.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg using Bandage to confirm the final result.
+2019-06-25 05:43:14,292 - INFO: Writing output finished.
+2019-06-25 05:43:14,293 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 1179.74 s
+Thank you!

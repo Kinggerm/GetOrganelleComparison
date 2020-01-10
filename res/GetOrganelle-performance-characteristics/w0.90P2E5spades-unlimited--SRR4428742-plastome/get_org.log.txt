@@ -1,0 +1,111 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR4428742_250M_1.fastq -2 SRR4428742_250M_2.fastq -t 1 -J 1 -M 1 -R 1000 -s ../local_seed/NC_011942.1.Gnetum_parvifolium.complete_plastome.fasta -w 0.90 -o w0.90P2E5spades-unlimited--SRR4428742-plastome -k 35,75 -F embplant_pt -P 2E5
+
+2019-09-22 15:51:12,489 - INFO: Pre-reading fastq ...
+2019-09-22 15:51:12,489 - INFO: Estimating reads to use ...
+2019-09-22 15:51:13,598 - INFO: Estimating reads to use finished.
+2019-09-22 15:51:17,273 - INFO: Counting read qualities ...
+2019-09-22 15:51:17,500 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-09-22 15:51:17,502 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-09-22 15:51:17,625 - INFO: Mean error rate = 0.0061
+2019-09-22 15:51:17,627 - INFO: Counting read lengths ...
+2019-09-22 15:51:33,199 - INFO: Mean = 100.0 bp, maximum = 100 bp.
+2019-09-22 15:51:33,200 - INFO: Reads used = 2500000+2500000
+2019-09-22 15:51:33,200 - INFO: Pre-reading fastq finished.
+
+2019-09-22 15:51:33,200 - INFO: Making seed reads ...
+2019-09-22 15:51:33,211 - INFO: Making seed - bowtie2 index ...
+2019-09-22 15:51:33,536 - INFO: Making seed - bowtie2 index finished.
+2019-09-22 15:51:33,536 - INFO: Mapping reads to seed bowtie2 index ...
+2019-09-22 15:53:13,563 - INFO: Mapping finished.
+2019-09-22 15:53:13,564 - INFO: Seed reads made: w0.90P2E5spades-unlimited--SRR4428742-plastome/seed/embplant_pt.initial.fq (11058876 bytes)
+2019-09-22 15:53:13,564 - INFO: Making seed reads finished.
+
+2019-09-22 15:53:13,564 - INFO: Checking seed reads and parameters ...
+2019-09-22 15:53:18,244 - INFO: Estimated embplant_pt-hitting base-coverage = 432.80
+2019-09-22 15:53:18,244 - INFO: Setting '-w 90'
+2019-09-22 15:53:18,244 - INFO: Setting '--max-extending-len inf'
+2019-09-22 15:53:18,313 - INFO: Checking seed reads and parameters finished.
+
+2019-09-22 15:53:18,313 - INFO: Making read index ...
+2019-09-22 15:54:37,474 - INFO: Mem 1.572 G, 4355099 candidates in all 5000000 reads
+2019-09-22 15:54:37,492 - INFO: Pre-grouping reads ...
+2019-09-22 15:54:37,492 - INFO: Setting '--pre-w 90'
+2019-09-22 15:54:38,771 - INFO: Mem 1.379 G, 200000/226166 used/duplicated
+2019-09-22 15:54:48,877 - INFO: Mem 1.534 G, 10327 groups made.
+2019-09-22 15:54:50,139 - INFO: Making read index finished.
+
+2019-09-22 15:54:50,140 - INFO: Extending ...
+2019-09-22 15:54:50,140 - INFO: Adding initial words ...
+2019-09-22 15:54:50,840 - INFO: AW 62394
+2019-09-22 15:55:28,064 - INFO: Round 1: 4355099/4355099 AI 99379 AW 300660 Mem 0.661
+2019-09-22 15:56:03,815 - INFO: Round 2: 4355099/4355099 AI 117846 AW 367968 Mem 0.676
+2019-09-22 15:56:40,164 - INFO: Round 3: 4355099/4355099 AI 130263 AW 384096 Mem 0.676
+2019-09-22 15:57:16,501 - INFO: Round 4: 4355099/4355099 AI 131510 AW 386460 Mem 0.676
+2019-09-22 15:57:52,655 - INFO: Round 5: 4355099/4355099 AI 131712 AW 387718 Mem 0.676
+2019-09-22 15:58:28,869 - INFO: Round 6: 4355099/4355099 AI 131799 AW 388208 Mem 0.676
+2019-09-22 15:59:05,098 - INFO: Round 7: 4355099/4355099 AI 131855 AW 388638 Mem 0.676
+2019-09-22 15:59:41,024 - INFO: Round 8: 4355099/4355099 AI 131887 AW 388850 Mem 0.676
+2019-09-22 16:00:17,230 - INFO: Round 9: 4355099/4355099 AI 131918 AW 389056 Mem 0.676
+2019-09-22 16:00:53,239 - INFO: Round 10: 4355099/4355099 AI 131937 AW 389226 Mem 0.676
+2019-09-22 16:01:29,474 - INFO: Round 11: 4355099/4355099 AI 131957 AW 389298 Mem 0.676
+2019-09-22 16:02:05,438 - INFO: Round 12: 4355099/4355099 AI 131960 AW 389322 Mem 0.676
+2019-09-22 16:02:41,373 - INFO: Round 13: 4355099/4355099 AI 131962 AW 389340 Mem 0.676
+2019-09-22 16:03:17,358 - INFO: Round 14: 4355099/4355099 AI 131971 AW 389388 Mem 0.676
+2019-09-22 16:03:53,273 - INFO: Round 15: 4355099/4355099 AI 131973 AW 389398 Mem 0.676
+2019-09-22 16:04:29,433 - INFO: Round 16: 4355099/4355099 AI 131979 AW 389450 Mem 0.676
+2019-09-22 16:05:05,307 - INFO: Round 17: 4355099/4355099 AI 131986 AW 389500 Mem 0.676
+2019-09-22 16:05:41,476 - INFO: Round 18: 4355099/4355099 AI 131991 AW 389530 Mem 0.676
+2019-09-22 16:06:17,601 - INFO: Round 19: 4355099/4355099 AI 131997 AW 389562 Mem 0.676
+2019-09-22 16:06:53,728 - INFO: Round 20: 4355099/4355099 AI 131997 AW 389562 Mem 0.676
+2019-09-22 16:06:53,729 - INFO: No more reads found and terminated ...
+2019-09-22 16:07:14,152 - INFO: Extending finished.
+
+2019-09-22 16:07:14,527 - INFO: Separating filtered fastq file ... 
+2019-09-22 16:07:18,566 - INFO: Setting '-k 35,75'
+2019-09-22 16:07:18,566 - INFO: Assembling using SPAdes ...
+2019-09-22 16:10:16,489 - INFO: Insert size = 154.759, deviation = 11.9616, left quantile = 141, right quantile = 169
+2019-09-22 16:10:16,489 - INFO: Assembling finished.
+
+2019-09-22 16:10:16,489 - INFO: Slimming assembly graphs ...
+2019-09-22 16:10:18,098 - INFO: Slimming w0.90P2E5spades-unlimited--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg finished!
+2019-09-22 16:10:18,101 - INFO: Slimming assembly graphs finished
+
+2019-09-22 16:10:18,102 - INFO: Extracting embplant_pt from the assemblies ...
+2019-09-22 16:10:18,103 - INFO: Disentangling w0.90P2E5spades-unlimited--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-09-22 16:10:18,132 - INFO: Disentangling failed: 'Incomplete/Complicated graph: please check around EDGE_39100!'
+2019-09-22 16:10:18,133 - INFO: Disentangling w0.90P2E5spades-unlimited--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as contig(s) ... 
+2019-09-22 16:10:18,211 - INFO: Vertex_39100 #copy = 1
+2019-09-22 16:10:18,212 - INFO: Vertex_39192 #copy = 1
+2019-09-22 16:10:18,212 - INFO: Vertex_39394 #copy = 1
+2019-09-22 16:10:18,212 - INFO: Vertex_39402 #copy = 2
+2019-09-22 16:10:18,212 - INFO: Average embplant_pt kmer-coverage = 97.22
+2019-09-22 16:10:18,212 - INFO: Average embplant_pt base-coverage = 373.934
+2019-09-22 16:10:18,212 - INFO: Writing output ...
+2019-09-22 16:10:18,213 - WARNING: More than one structure (gene order) produced ...
+2019-09-22 16:10:18,213 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2019-09-22 16:10:18,216 - INFO: Writing PATH1 of embplant_pt contig(s) to w0.90P2E5spades-unlimited--SRR4428742-plastome/embplant_pt.K75.contigs.graph1.1.path_sequence.fasta
+2019-09-22 16:10:18,220 - INFO: Writing PATH2 of embplant_pt contig(s) to w0.90P2E5spades-unlimited--SRR4428742-plastome/embplant_pt.K75.contigs.graph1.2.path_sequence.fasta
+2019-09-22 16:10:18,221 - INFO: Writing GRAPH to w0.90P2E5spades-unlimited--SRR4428742-plastome/embplant_pt.K75.contigs.graph1.selected_graph.gfa
+2019-09-22 16:10:18,247 - INFO: Result status of embplant_pt: 1 contig(s)
+2019-09-22 16:10:18,293 - INFO: Writing output finished.
+2019-09-22 16:10:18,294 - INFO: Please ...
+2019-09-22 16:10:18,294 - INFO: load the graph file 'assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg' in K75
+2019-09-22 16:10:18,294 - INFO: load the CSV file 'assembly_graph.fastg.extend-embplant_pt-embplant_mt.csv' in K75
+2019-09-22 16:10:18,294 - INFO: visualize and confirm the incomplete result in Bandage.
+2019-09-22 16:10:18,294 - INFO: If the result is nearly complete, 
+2019-09-22 16:10:18,294 - INFO: you can also adjust the arguments to try again.
+2019-09-22 16:10:18,294 - INFO: If you have questions for us, please provide us with the get_org.log.txt file and the graph in the format you like!
+2019-09-22 16:10:18,295 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 1146.18 s
+Thank you!

@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 SRR2037123_1.fastq.gz -2 SRR2037123_2.fastq.gz -o NOVOPlasty-plastome/K31/NOVOPlasty-K31--SRR2037123-plastome--evaluated -f NOVOPlasty-plastome/K31/SRR2037123-plastome/Circularized_assembly_1_novoplasty.plastome.fasta -t 16 --continue --draw -c yes --plot-title SRR2037123-NOVOPlasty --plot-subtitle "Used result file: Circularized_assembly_1_novoplasty.plastome.fasta      Options: K-mer=31, Genome Range=15000-180000      Result status: circular genome"
+
+2019-09-04 00:10:34,853 - INFO: Making  - bowtie2 index ...
+2019-09-04 00:10:35,235 - INFO: Making  - bowtie2 index finished.
+2019-09-04 00:10:35,235 - INFO: Mapping reads to  bowtie2 index ...
+2019-09-04 00:12:43,286 - INFO: Mapping finished.
+2019-09-04 00:12:43,287 - INFO: Reference length: 69324 (69324)
+2019-09-04 00:14:44,831 - INFO: # mapped reads: 848795×2+22743
+2019-09-04 00:14:44,832 - INFO: # mapped pairs: 848795
+2019-09-04 00:14:44,832 - INFO: Aligned: 2500.82±1068.77 (2500.82±1068.77)
+2019-09-04 00:14:44,832 - INFO: Mismatched: 22.02±28.92 (22.02±28.92)
+2019-09-04 00:14:44,832 - INFO: Inserted: 5.58±11.73 (5.58±11.73)
+2019-09-04 00:14:44,832 - INFO: Deleted: 0.34±1.14 (0.34±1.14)
+2019-09-04 00:14:44,832 - INFO: Customized error rate: 0.0112±0.0127 (0.0112±0.0127)
+

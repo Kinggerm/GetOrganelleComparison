@@ -1,0 +1,77 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR4428742_250M_1.fastq -2 SRR4428742_250M_2.fastq -R 1000 -t 1 -J 1 -M 1 -s ../local_seed/NC_011942.1.Gnetum_parvifolium.complete_plastome.fasta -w 0.40 -o w0.40P0--SRR4428742-plastome --out-per-round --no-spades -F embplant_pt -P 0
+
+2019-09-22 14:46:21,958 - INFO: Pre-reading fastq ...
+2019-09-22 14:46:21,959 - INFO: Estimating reads to use ...
+2019-09-22 14:46:23,273 - INFO: Estimating reads to use finished.
+2019-09-22 14:46:43,813 - INFO: Counting read qualities ...
+2019-09-22 14:46:44,033 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-09-22 14:46:44,035 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-09-22 14:46:44,159 - INFO: Mean error rate = 0.0061
+2019-09-22 14:46:44,161 - INFO: Counting read lengths ...
+2019-09-22 14:46:59,694 - INFO: Mean = 100.0 bp, maximum = 100 bp.
+2019-09-22 14:46:59,695 - INFO: Reads used = 2500000+2500000
+2019-09-22 14:46:59,695 - INFO: Pre-reading fastq finished.
+
+2019-09-22 14:46:59,695 - INFO: Making seed reads ...
+2019-09-22 14:46:59,707 - INFO: Making seed - bowtie2 index ...
+2019-09-22 14:47:00,047 - INFO: Making seed - bowtie2 index finished.
+2019-09-22 14:47:00,048 - INFO: Mapping reads to seed bowtie2 index ...
+2019-09-22 14:48:43,417 - INFO: Mapping finished.
+2019-09-22 14:48:43,417 - INFO: Seed reads made: w0.40P0--SRR4428742-plastome/seed/embplant_pt.initial.fq (11058876 bytes)
+2019-09-22 14:48:43,417 - INFO: Making seed reads finished.
+
+2019-09-22 14:48:43,417 - INFO: Checking seed reads and parameters ...
+2019-09-22 14:48:48,349 - INFO: Estimated embplant_pt-hitting base-coverage = 432.80
+2019-09-22 14:48:48,349 - INFO: Setting '-w 40'
+2019-09-22 14:48:48,349 - INFO: Setting '--max-extending-len inf'
+2019-09-22 14:48:48,421 - INFO: Checking seed reads and parameters finished.
+
+2019-09-22 14:48:48,421 - INFO: Making read index ...
+2019-09-22 14:50:30,003 - INFO: Mem 1.79 G, 4355099 candidates in all 5000000 reads
+2019-09-22 14:50:31,826 - INFO: Making read index finished.
+
+2019-09-22 14:50:31,826 - INFO: Extending ...
+2019-09-22 14:50:31,827 - INFO: Adding initial words ...
+2019-09-22 14:50:34,225 - INFO: AW 127100
+2019-09-22 14:58:33,883 - INFO: Round 1: 4355099/4355099 AI 1403082 AW 58346734 Mem 7.543
+2019-09-22 15:05:36,601 - INFO: Round 2: 4355099/4355099 AI 1016233 AW 101872752 Mem 13.517
+2019-09-22 15:10:15,874 - INFO: Round 3: 4355099/4355099 AI 204081 AW 70725079 Mem 10.705
+2019-09-22 15:13:14,964 - INFO: Round 4: 4355099/4355099 AI 80986 AW 18909054 Mem 3.854
+2019-09-22 15:15:01,012 - INFO: Round 5: 4355099/4355099 AI 38637 AW 7024776 Mem 3.604
+2019-09-22 15:16:37,240 - INFO: Round 6: 4355099/4355099 AI 17292 AW 3102426 Mem 3.479
+2019-09-22 15:18:08,143 - INFO: Round 7: 4355099/4355099 AI 9716 AW 1524384 Mem 3.417
+2019-09-22 15:19:36,107 - INFO: Round 8: 4355099/4355099 AI 5671 AW 886396 Mem 3.386
+2019-09-22 15:21:01,111 - INFO: Round 9: 4355099/4355099 AI 3487 AW 552772 Mem 3.354
+2019-09-22 15:22:15,261 - INFO: Round 10: 4355099/4355099 AI 2258 AW 367618 Mem 3.354
+2019-09-22 15:23:27,097 - INFO: Round 11: 4355099/4355099 AI 1567 AW 248602 Mem 3.354
+2019-09-22 15:24:35,819 - INFO: Round 12: 4355099/4355099 AI 1219 AW 170366 Mem 3.354
+2019-09-22 15:25:44,909 - INFO: Round 13: 4355099/4355099 AI 688 AW 116600 Mem 3.354
+2019-09-22 15:26:51,227 - INFO: Round 14: 4355099/4355099 AI 572 AW 81330 Mem 3.354
+2019-09-22 15:27:57,140 - INFO: Round 15: 4355099/4355099 AI 485 AW 66624 Mem 3.354
+2019-09-22 15:29:03,406 - INFO: Round 16: 4355099/4355099 AI 338 AW 53920 Mem 3.354
+2019-09-22 15:30:09,020 - INFO: Round 17: 4355099/4355099 AI 207 AW 39312 Mem 3.354
+2019-09-22 15:31:15,992 - INFO: Round 18: 4355099/4355099 AI 208 AW 30330 Mem 3.354
+2019-09-22 15:32:22,418 - INFO: Round 19: 4355099/4355099 AI 171 AW 28022 Mem 3.354
+2019-09-22 15:33:29,063 - INFO: Round 20: 4355099/4355099 AI 176 AW 24812 Mem 3.354
+2019-09-22 15:34:35,166 - INFO: Round 21: 4355099/4355099 AI 66 AW 18890 Mem 3.354
+2019-09-22 15:35:39,585 - INFO: Round 22: 4355099/4355099 AI 40 AW 9822 Mem 3.354
+2019-09-22 15:36:45,184 - INFO: Round 23: 4355099/4355099 AI 24 AW 5836 Mem 3.354
+2019-09-22 15:37:50,406 - INFO: Round 24: 4355099/4355099 AI 27 AW 4546 Mem 3.354
+2019-09-22 15:38:54,685 - INFO: Round 25: 4355099/4355099 AI 10 AW 2988 Mem 3.354
+2019-09-22 15:39:59,351 - INFO: Round 26: 4355099/4355099 AI 0 AW 1022 Mem 3.354
+2019-09-22 15:39:59,351 - INFO: No more reads found and terminated ...
+2019-09-22 15:40:32,933 - INFO: Extending finished.
+
+2019-09-22 15:40:33,331 - INFO: Separating filtered fastq file ... 
+
+Total cost 3276.64 s
+Thank you!

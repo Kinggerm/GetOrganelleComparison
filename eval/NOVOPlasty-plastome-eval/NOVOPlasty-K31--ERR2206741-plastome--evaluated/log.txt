@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 ERR2206741_1.fastq.gz -2 ERR2206741_2.fastq.gz -o NOVOPlasty-plastome/K31/NOVOPlasty-K31--ERR2206741-plastome--evaluated -f NOVOPlasty-plastome/K31/ERR2206741-plastome/Contigs_1_novoplasty.plastome.fasta -t 16 --continue --draw -c no --plot-title ERR2206741-NOVOPlasty --plot-subtitle "Used result file: Contigs_1_novoplasty.plastome.fasta      Options: K-mer=31, Genome Range=15000-180000      Result status: 2 contig(s)"
+
+2019-09-03 23:10:43,256 - INFO: Making  - bowtie2 index ...
+2019-09-03 23:10:43,575 - INFO: Making  - bowtie2 index finished.
+2019-09-03 23:10:43,576 - INFO: Mapping reads to  bowtie2 index ...
+2019-09-03 23:13:46,412 - INFO: Mapping finished.
+2019-09-03 23:13:46,413 - INFO: Reference length: 3939 (3638, 301)
+2019-09-03 23:13:46,829 - INFO: # mapped reads: 454×2+247
+2019-09-03 23:13:46,829 - INFO: # mapped pairs: 454
+2019-09-03 23:13:46,829 - INFO: Aligned: 29.59±24.11 (30.96±24.49, 13.01±7.70)
+2019-09-03 23:13:46,830 - INFO: Mismatched: 0.77±2.31 (0.83±2.39, 0.05±0.31)
+2019-09-03 23:13:46,830 - INFO: Inserted: 0.03±0.65 (0.02±0.63, 0.08±0.86)
+2019-09-03 23:13:46,830 - INFO: Deleted: 0.00±0.08 (0.01±0.08, 0.00±0.00)
+2019-09-03 23:13:46,830 - INFO: Customized error rate: 0.0272±0.0820 (0.0278±0.0808, 0.0094±0.0698)
+

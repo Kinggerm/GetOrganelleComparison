@@ -1,0 +1,116 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR5804159_1.fastq.gz -2 SRR5804159_2.fastq.gz -F fungus_mt -o auto--SRR5804159-mitogenome -R 10 -t 1 -k 21,43,65,87,127
+
+2019-06-23 19:42:41,941 - INFO: Pre-reading fastq ...
+2019-06-23 19:42:41,941 - INFO: Estimating reads to use ...
+2019-06-23 19:42:42,807 - INFO: Tasting 100000+100000 reads ...
+2019-06-23 19:42:52,972 - INFO: Estimating reads to use finished.
+2019-06-23 19:42:52,972 - INFO: Unzipping reads file: SRR5804159_1.fastq.gz (747385820 bytes)
+2019-06-23 19:44:06,128 - INFO: Unzipping reads file: SRR5804159_2.fastq.gz (858793633 bytes)
+2019-06-23 19:46:42,997 - INFO: Counting read qualities ...
+2019-06-23 19:46:43,209 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-06-23 19:46:43,209 - WARNING: Max quality score 'K'(75:42) in your fastq file exceeds the usual range (33, 74)
+2019-06-23 19:46:43,211 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-06-23 19:46:43,279 - INFO: Mean error rate = 0.0125
+2019-06-23 19:46:43,280 - INFO: Counting read lengths ...
+2019-06-23 19:47:18,076 - INFO: Mean = 150.0 bp, maximum = 150 bp.
+2019-06-23 19:47:18,076 - INFO: Reads used = 10211082+10211082
+2019-06-23 19:47:18,076 - INFO: Pre-reading fastq finished.
+
+2019-06-23 19:47:18,076 - INFO: Making seed reads ...
+2019-06-23 19:47:18,077 - INFO: Seed bowtie2 index existed!
+2019-06-23 19:47:18,077 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-23 19:54:49,577 - INFO: Mapping finished.
+2019-06-23 19:54:49,577 - INFO: Seed reads made: auto--SRR5804159-mitogenome/seed/fungus_mt.initial.fq (10889810 bytes)
+2019-06-23 19:54:49,578 - INFO: Making seed reads finished.
+
+2019-06-23 19:54:49,578 - INFO: Checking seed reads and parameters ...
+2019-06-23 19:54:49,578 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2019-06-23 19:54:49,578 - INFO: If the result graph is not a circular organelle genome, 
+2019-06-23 19:54:49,578 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2019-06-23 19:54:53,107 - INFO: Pre-assembling mapped reads ...
+2019-06-23 19:54:58,142 - INFO: Pre-assembling mapped reads finished.
+2019-06-23 19:54:58,142 - INFO: Estimated fungus_mt-hitting base-coverage = 696.60
+2019-06-23 19:54:58,142 - INFO: Reads reduced to = 7329184+7329184
+2019-06-23 19:54:58,142 - INFO: Adjusting expected fungus_mt base coverage to 500.00
+2019-06-23 19:54:58,143 - INFO: Estimated word size(s): 119
+2019-06-23 19:54:58,143 - INFO: Setting '-w 119'
+2019-06-23 19:54:58,143 - INFO: Setting '--max-extending-len inf'
+2019-06-23 19:54:58,230 - INFO: Checking seed reads and parameters finished.
+
+2019-06-23 19:54:58,231 - INFO: Making read index ...
+2019-06-23 19:56:23,367 - INFO: For auto--SRR5804159-mitogenome/1-SRR5804159_1.fastq.gz.fastq, only top 7329184 reads are used in downstream analysis.
+2019-06-23 19:57:27,530 - INFO: For auto--SRR5804159-mitogenome/2-SRR5804159_2.fastq.gz.fastq, only top 7329184 reads are used in downstream analysis.
+2019-06-23 19:57:43,544 - INFO: Mem 3.695 G, 12209537 candidates in all 14658368 reads
+2019-06-23 19:57:43,590 - INFO: Pre-grouping reads ...
+2019-06-23 19:57:43,590 - INFO: Setting '--pre-w 119'
+2019-06-23 19:57:45,769 - INFO: Mem 3.506 G, 200000/1847934 used/duplicated
+2019-06-23 19:58:07,254 - INFO: Mem 4.18 G, 17375 groups made.
+2019-06-23 19:58:14,349 - INFO: Making read index finished.
+
+2019-06-23 19:58:14,349 - INFO: Extending ...
+2019-06-23 19:58:14,349 - INFO: Adding initial words ...
+2019-06-23 19:58:15,855 - INFO: AW 247528
+2019-06-23 20:00:28,095 - INFO: Round 1: 12209537/12209537 AI 53046 AW 464216 Mem 2.689
+2019-06-23 20:02:30,546 - INFO: Round 2: 12209537/12209537 AI 59217 AW 499062 Mem 2.689
+2019-06-23 20:04:20,899 - INFO: Round 3: 12209537/12209537 AI 71345 AW 561296 Mem 2.689
+2019-06-23 20:05:59,035 - INFO: Round 4: 12209537/12209537 AI 73695 AW 578284 Mem 2.689
+2019-06-23 20:07:49,426 - INFO: Round 5: 12209537/12209537 AI 78508 AW 604396 Mem 2.689
+2019-06-23 20:09:39,546 - INFO: Round 6: 12209537/12209537 AI 80722 AW 620470 Mem 2.689
+2019-06-23 20:11:02,133 - INFO: Round 7: 12209537/12209537 AI 82537 AW 632734 Mem 2.689
+2019-06-23 20:12:57,529 - INFO: Round 8: 12209537/12209537 AI 84295 AW 646616 Mem 2.689
+2019-06-23 20:14:36,984 - INFO: Round 9: 12209537/12209537 AI 90326 AW 711140 Mem 2.72
+2019-06-23 20:16:00,883 - INFO: Round 10: 12209537/12209537 AI 130393 AW 1082840 Mem 2.72
+2019-06-23 20:16:00,884 - INFO: Hit the round limit 10 and terminated ...
+2019-06-23 20:16:31,455 - INFO: Extending finished.
+
+2019-06-23 20:16:32,318 - INFO: Separating filtered fastq file ... 
+2019-06-23 20:16:34,032 - INFO: Setting '-k 21,43,65,87,127'
+2019-06-23 20:16:34,032 - INFO: Assembling using SPAdes ...
+2019-06-23 20:21:11,834 - INFO: Insert size = 286.68, deviation = 20.8236, left quantile = 261, right quantile = 315
+2019-06-23 20:21:11,834 - INFO: Assembling finished.
+
+2019-06-23 20:21:11,835 - INFO: Slimming assembly graphs ...
+2019-06-23 20:21:13,614 - INFO: Slimming auto--SRR5804159-mitogenome/filtered_spades/K127/assembly_graph.fastg finished!
+2019-06-23 20:21:15,356 - INFO: Slimming auto--SRR5804159-mitogenome/filtered_spades/K87/assembly_graph.fastg finished!
+2019-06-23 20:21:17,880 - INFO: Slimming auto--SRR5804159-mitogenome/filtered_spades/K65/assembly_graph.fastg finished!
+2019-06-23 20:21:20,332 - INFO: Slimming auto--SRR5804159-mitogenome/filtered_spades/K43/assembly_graph.fastg finished!
+2019-06-23 20:21:20,332 - INFO: Slimming assembly graphs finished
+
+2019-06-23 20:21:20,332 - INFO: Extracting fungus_mt from the assemblies ...
+2019-06-23 20:21:20,333 - INFO: Disentangling auto--SRR5804159-mitogenome/filtered_spades/K127/assembly_graph.fastg.extend-fungus_mt.fastg as a circular genome ... 
+2019-06-23 20:21:20,345 - INFO: Disentangling failed: 'Multiple isolated fungus_mt components detected! Broken or contamination?'
+2019-06-23 20:21:20,346 - INFO: Disentangling auto--SRR5804159-mitogenome/filtered_spades/K87/assembly_graph.fastg.extend-fungus_mt.fastg as a circular genome ... 
+2019-06-23 20:21:20,361 - INFO: Disentangling failed: 'Multiple isolated fungus_mt components detected! Broken or contamination?'
+2019-06-23 20:21:20,361 - INFO: Disentangling auto--SRR5804159-mitogenome/filtered_spades/K65/assembly_graph.fastg.extend-fungus_mt.fastg as a circular genome ... 
+2019-06-23 20:21:37,896 - INFO: Disentangling failed: 'Multiple isolated fungus_mt components detected! Broken or contamination?'
+2019-06-23 20:21:37,904 - INFO: Disentangling auto--SRR5804159-mitogenome/filtered_spades/K43/assembly_graph.fastg.extend-fungus_mt.fastg as a circular genome ... 
+2019-06-23 20:21:56,860 - INFO: Disentangling failed: 'Multiple isolated fungus_mt components detected! Broken or contamination?'
+2019-06-23 20:21:56,867 - INFO: Disentangling auto--SRR5804159-mitogenome/filtered_spades/K127/assembly_graph.fastg.extend-fungus_mt.fastg as contig(s) ... 
+2019-06-23 20:21:56,930 - INFO: Average fungus_mt kmer-coverage = 114.254
+2019-06-23 20:21:56,930 - INFO: Average fungus_mt base-coverage = 714.401
+2019-06-23 20:21:56,930 - INFO: Writing output ...
+2019-06-23 20:21:56,931 - INFO: Writing PATH1 of fungus_mt contig(s) to auto--SRR5804159-mitogenome/fungus_mt.K127.contigs.graph1.1.path_sequence.fasta
+2019-06-23 20:21:56,932 - INFO: Writing GRAPH to auto--SRR5804159-mitogenome/fungus_mt.K127.contigs.graph1.selected_graph.gfa
+2019-06-23 20:21:56,954 - INFO: Result status of fungus_mt: 4 contig(s)
+2019-06-23 20:21:57,048 - INFO: Writing output finished.
+2019-06-23 20:21:57,049 - INFO: Please ...
+2019-06-23 20:21:57,049 - INFO: load the graph file 'assembly_graph.fastg.extend-fungus_mt.fastg' in K127,K87,K65,K43
+2019-06-23 20:21:57,049 - INFO: load the CSV file 'assembly_graph.fastg.extend-fungus_mt.csv' in K127,K87,K65,K43
+2019-06-23 20:21:57,049 - INFO: visualize and confirm the incomplete result in Bandage.
+2019-06-23 20:21:57,049 - INFO: If the result is nearly complete, 
+2019-06-23 20:21:57,050 - INFO: you can also adjust the arguments to try again.
+2019-06-23 20:21:57,050 - INFO: If you have questions for us, please provide us with the get_org.log.txt file and the graph in the format you like!
+2019-06-23 20:21:57,050 - INFO: Extracting fungus_mt from the assemblies finished.
+
+
+Total cost 2355.35 s
+Thank you!

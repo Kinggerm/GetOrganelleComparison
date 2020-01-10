@@ -1,0 +1,91 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR5602588_1.fastq.gz -2 SRR5602588_2.fastq.gz -F embplant_pt -o w0.80--SRR5602588-plastome -R 10 -t 1 -k 21,55,91,127 -w 0.80
+
+2019-06-25 06:04:52,121 - INFO: Pre-reading fastq ...
+2019-06-25 06:04:52,121 - INFO: Estimating reads to use ...
+2019-06-25 06:04:53,063 - INFO: Tasting 100000+100000 reads ...
+2019-06-25 06:05:23,881 - INFO: Estimating reads to use finished.
+2019-06-25 06:05:23,882 - INFO: Unzipping reads file: SRR5602588_1.fastq.gz (308140855 bytes)
+2019-06-25 06:05:32,822 - INFO: Unzipping reads file: SRR5602588_2.fastq.gz (392869043 bytes)
+2019-06-25 06:05:42,856 - INFO: Counting read qualities ...
+2019-06-25 06:05:43,186 - INFO: Identified quality encoding format = Sanger
+2019-06-25 06:05:43,189 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-06-25 06:05:43,389 - INFO: Mean error rate = 0.0135
+2019-06-25 06:05:43,392 - INFO: Counting read lengths ...
+2019-06-25 06:05:50,297 - INFO: Mean = 297.9 bp, maximum = 300 bp.
+2019-06-25 06:05:50,297 - INFO: Reads used = 1600124+1600124
+2019-06-25 06:05:50,297 - INFO: Pre-reading fastq finished.
+
+2019-06-25 06:05:50,297 - INFO: Making seed reads ...
+2019-06-25 06:05:50,298 - INFO: Seed bowtie2 index existed!
+2019-06-25 06:05:50,298 - INFO: Mapping reads to seed bowtie2 index ...
+2019-06-25 06:09:28,247 - INFO: Mapping finished.
+2019-06-25 06:09:28,248 - INFO: Seed reads made: w0.80--SRR5602588-plastome/seed/embplant_pt.initial.fq (31708734 bytes)
+2019-06-25 06:09:28,248 - INFO: Making seed reads finished.
+
+2019-06-25 06:09:28,248 - INFO: Checking seed reads and parameters ...
+2019-06-25 06:09:34,083 - INFO: Estimated embplant_pt-hitting base-coverage = 56.49
+2019-06-25 06:09:34,084 - INFO: Setting '-w 238'
+2019-06-25 06:09:34,084 - INFO: Setting '--max-extending-len inf'
+2019-06-25 06:09:34,235 - INFO: Checking seed reads and parameters finished.
+
+2019-06-25 06:09:34,235 - INFO: Making read index ...
+2019-06-25 06:10:12,608 - INFO: Mem 1.888 G, 3164983 candidates in all 3200248 reads
+2019-06-25 06:10:12,678 - INFO: Pre-grouping reads ...
+2019-06-25 06:10:12,678 - INFO: Setting '--pre-w 238'
+2019-06-25 06:10:13,073 - INFO: Mem 1.732 G, 8420/8420 used/duplicated
+2019-06-25 06:10:17,534 - INFO: Mem 1.751 G, 521 groups made.
+2019-06-25 06:10:18,198 - INFO: Making read index finished.
+
+2019-06-25 06:10:18,198 - INFO: Extending ...
+2019-06-25 06:10:18,198 - INFO: Adding initial words ...
+2019-06-25 06:10:23,429 - INFO: AW 2819330
+2019-06-25 06:11:06,135 - INFO: Round 1: 3164983/3164983 AI 59851 AW 2986148 Mem 1.059
+2019-06-25 06:11:45,941 - INFO: Round 2: 3164983/3164983 AI 61925 AW 3004998 Mem 1.064
+2019-06-25 06:12:24,817 - INFO: Round 3: 3164983/3164983 AI 62122 AW 3008796 Mem 1.065
+2019-06-25 06:13:03,758 - INFO: Round 4: 3164983/3164983 AI 62141 AW 3009314 Mem 1.065
+2019-06-25 06:13:42,540 - INFO: Round 5: 3164983/3164983 AI 62141 AW 3009314 Mem 1.065
+2019-06-25 06:13:42,540 - INFO: No more reads found and terminated ...
+2019-06-25 06:13:51,717 - INFO: Extending finished.
+
+2019-06-25 06:13:52,213 - INFO: Separating filtered fastq file ... 
+2019-06-25 06:13:52,584 - INFO: Setting '-k 21,55,91,127'
+2019-06-25 06:13:52,584 - INFO: Assembling using SPAdes ...
+2019-06-25 06:15:56,615 - INFO: Insert size = 632.693, deviation = 154.553, left quantile = 455, right quantile = 843
+2019-06-25 06:15:56,616 - INFO: Assembling finished.
+
+2019-06-25 06:15:56,616 - INFO: Slimming assembly graphs ...
+2019-06-25 06:15:58,254 - INFO: Slimming w0.80--SRR5602588-plastome/filtered_spades/K127/assembly_graph.fastg finished!
+2019-06-25 06:15:59,583 - INFO: Slimming w0.80--SRR5602588-plastome/filtered_spades/K91/assembly_graph.fastg finished!
+2019-06-25 06:16:00,829 - INFO: Slimming w0.80--SRR5602588-plastome/filtered_spades/K55/assembly_graph.fastg finished!
+2019-06-25 06:16:00,829 - INFO: Slimming assembly graphs finished
+
+2019-06-25 06:16:00,829 - INFO: Extracting embplant_pt from the assemblies ...
+2019-06-25 06:16:00,830 - INFO: Disentangling w0.80--SRR5602588-plastome/filtered_spades/K127/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-06-25 06:16:01,286 - INFO: Vertex_67628 #copy = 1
+2019-06-25 06:16:01,286 - INFO: Vertex_67792 #copy = 1
+2019-06-25 06:16:01,286 - INFO: Vertex_67800 #copy = 2
+2019-06-25 06:16:01,286 - INFO: Average embplant_pt kmer-coverage = 69.517
+2019-06-25 06:16:01,286 - INFO: Average embplant_pt base-coverage = 120.474
+2019-06-25 06:16:01,286 - INFO: Writing output ...
+2019-06-25 06:16:01,365 - WARNING: More than one circular genome structure produced ...
+2019-06-25 06:16:01,365 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2019-06-25 06:16:01,369 - INFO: Writing PATH1 of complete embplant_pt to w0.80--SRR5602588-plastome/embplant_pt.K127.complete.graph1.1.path_sequence.fasta
+2019-06-25 06:16:01,373 - INFO: Writing PATH2 of complete embplant_pt to w0.80--SRR5602588-plastome/embplant_pt.K127.complete.graph1.2.path_sequence.fasta
+2019-06-25 06:16:01,373 - INFO: Writing GRAPH to w0.80--SRR5602588-plastome/embplant_pt.K127.complete.graph1.selected_graph.gfa
+2019-06-25 06:16:01,381 - INFO: Result status of embplant_pt: circular genome
+2019-06-25 06:16:01,412 - INFO: Please visualize w0.80--SRR5602588-plastome/filtered_K127.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg using Bandage to confirm the final result.
+2019-06-25 06:16:01,412 - INFO: Writing output finished.
+2019-06-25 06:16:01,413 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 669.68 s
+Thank you!

@@ -1,0 +1,81 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR4428742_250M_1.fastq -2 SRR4428742_250M_2.fastq -R 3 -t 1 -J 1 -M 1 -s ../local_seed/NC_011942.1.Gnetum_parvifolium.complete_plastome.fasta -w 0.45 -o w0.45P0spades-minimum--SRR4428742-plastome -k 35,75 -F embplant_pt -P 0
+
+2019-09-22 18:27:41,744 - INFO: Pre-reading fastq ...
+2019-09-22 18:27:41,745 - INFO: Estimating reads to use ...
+2019-09-22 18:27:42,941 - INFO: Estimating reads to use finished.
+2019-09-22 18:27:46,623 - INFO: Counting read qualities ...
+2019-09-22 18:27:46,847 - INFO: Identified quality encoding format = Illumina 1.8+
+2019-09-22 18:27:46,848 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2019-09-22 18:27:46,976 - INFO: Mean error rate = 0.0061
+2019-09-22 18:27:46,978 - INFO: Counting read lengths ...
+2019-09-22 18:28:02,620 - INFO: Mean = 100.0 bp, maximum = 100 bp.
+2019-09-22 18:28:02,620 - INFO: Reads used = 2500000+2500000
+2019-09-22 18:28:02,620 - INFO: Pre-reading fastq finished.
+
+2019-09-22 18:28:02,620 - INFO: Making seed reads ...
+2019-09-22 18:28:02,632 - INFO: Making seed - bowtie2 index ...
+2019-09-22 18:28:03,024 - INFO: Making seed - bowtie2 index finished.
+2019-09-22 18:28:03,024 - INFO: Mapping reads to seed bowtie2 index ...
+2019-09-22 18:29:50,895 - INFO: Mapping finished.
+2019-09-22 18:29:50,895 - INFO: Seed reads made: w0.45P0spades-minimum--SRR4428742-plastome/seed/embplant_pt.initial.fq (11058876 bytes)
+2019-09-22 18:29:50,896 - INFO: Making seed reads finished.
+
+2019-09-22 18:29:50,896 - INFO: Checking seed reads and parameters ...
+2019-09-22 18:29:55,785 - INFO: Estimated embplant_pt-hitting base-coverage = 432.80
+2019-09-22 18:29:55,786 - INFO: Setting '-w 45'
+2019-09-22 18:29:55,786 - INFO: Setting '--max-extending-len inf'
+2019-09-22 18:29:55,851 - INFO: Checking seed reads and parameters finished.
+
+2019-09-22 18:29:55,851 - INFO: Making read index ...
+2019-09-22 18:31:33,086 - INFO: Mem 1.785 G, 4355099 candidates in all 5000000 reads
+2019-09-22 18:31:34,786 - INFO: Making read index finished.
+
+2019-09-22 18:31:34,786 - INFO: Extending ...
+2019-09-22 18:31:34,786 - INFO: Adding initial words ...
+2019-09-22 18:31:37,143 - INFO: AW 129784
+2019-09-22 18:34:51,185 - INFO: Round 1: 4355099/4355099 AI 947968 AW 38022288 Mem 4.62
+2019-09-22 18:37:44,364 - INFO: Round 2: 4355099/4355099 AI 2069227 AW 82103624 Mem 9.72
+2019-09-22 18:39:05,834 - INFO: Round 3: 4355099/4355099 AI 2317340 AW 95651912 Mem 12.958
+2019-09-22 18:39:05,834 - INFO: Hit the round limit 3 and terminated ...
+2019-09-22 18:41:27,287 - INFO: Extending finished.
+
+2019-09-22 18:41:27,636 - INFO: Separating filtered fastq file ... 
+2019-09-22 18:41:49,214 - INFO: Setting '-k 35,75'
+2019-09-22 18:41:49,215 - INFO: Assembling using SPAdes ...
+2019-09-22 20:03:53,989 - INFO: Insert size = 155.329, deviation = 12.2796, left quantile = 141, right quantile = 170
+2019-09-22 20:03:53,989 - INFO: Assembling finished.
+
+2019-09-22 20:03:53,990 - INFO: Slimming assembly graphs ...
+2019-09-22 20:04:22,255 - INFO: Slimming w0.45P0spades-minimum--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg finished!
+2019-09-22 20:04:22,256 - INFO: Slimming assembly graphs finished
+
+2019-09-22 20:04:22,256 - INFO: Extracting embplant_pt from the assemblies ...
+2019-09-22 20:04:22,257 - INFO: Disentangling w0.45P0spades-minimum--SRR4428742-plastome/filtered_spades/K75/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2019-09-22 20:04:23,154 - INFO: Vertex_11313940_11390794_11269116_11262838_11944060_3142992_11230484_10821522_11305978_11742288_11242938_11743626_11438864_1130336_11409078_11726342_11733462_10983384_11405698_11730906_11711554_11736566_11389798_11745290 #copy = 2
+2019-09-22 20:04:23,154 - INFO: Vertex_11456434_11676846_10661260_11736314_11543262_3077990_11278670_454288_11247360_11744086_10973412_11742384_11295480_11732226_11423430_11304480_11676452_10882872_10671844_10733126_11275870_11253834_3063212_10965590_11737052_11239188_11654224_724374_11743526_11096348_11739288_11243338_11718514_11411318_11284342_11114022_11717014_11571224_11714388_11088160_11735810_11700538_11727668_11730404 #copy = 1
+2019-09-22 20:04:23,154 - INFO: Vertex_11711336_11701060_1041134_11325174 #copy = 1
+2019-09-22 20:04:23,154 - INFO: Average embplant_pt kmer-coverage = 99.493
+2019-09-22 20:04:23,154 - INFO: Average embplant_pt base-coverage = 382.677
+2019-09-22 20:04:23,155 - INFO: Writing output ...
+2019-09-22 20:04:23,298 - WARNING: More than one circular genome structure produced ...
+2019-09-22 20:04:23,299 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2019-09-22 20:04:23,304 - INFO: Writing PATH1 of complete embplant_pt to w0.45P0spades-minimum--SRR4428742-plastome/embplant_pt.K75.complete.graph1.1.path_sequence.fasta
+2019-09-22 20:04:23,308 - INFO: Writing PATH2 of complete embplant_pt to w0.45P0spades-minimum--SRR4428742-plastome/embplant_pt.K75.complete.graph1.2.path_sequence.fasta
+2019-09-22 20:04:23,309 - INFO: Writing GRAPH to w0.45P0spades-minimum--SRR4428742-plastome/embplant_pt.K75.complete.graph1.selected_graph.gfa
+2019-09-22 20:04:23,320 - INFO: Result status of embplant_pt: circular genome
+2019-09-22 20:04:23,381 - INFO: Please visualize w0.45P0spades-minimum--SRR4428742-plastome/filtered_K75.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg using Bandage to confirm the final result.
+2019-09-22 20:04:23,381 - INFO: Writing output finished.
+2019-09-22 20:04:23,382 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 5802.05 s
+Thank you!

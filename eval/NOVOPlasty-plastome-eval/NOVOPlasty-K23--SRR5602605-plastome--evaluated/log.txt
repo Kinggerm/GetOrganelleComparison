@@ -1,0 +1,16 @@
+
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/evaluate_assembly_using_mapping.py -1 SRR5602605_1.fastq.gz -2 SRR5602605_2.fastq.gz -o NOVOPlasty-plastome/K23/NOVOPlasty-K23--SRR5602605-plastome--evaluated -f NOVOPlasty-plastome/K23/SRR5602605-plastome/Contigs_1_novoplasty.plastome.fasta -t 16 --continue --draw -c no --plot-title SRR5602605-NOVOPlasty --plot-subtitle "Used result file: Contigs_1_novoplasty.plastome.fasta      Options: K-mer=23, Genome Range=15000-180000      Result status: 3 contig(s)"
+
+2019-09-03 22:40:00,916 - INFO: Making  - bowtie2 index ...
+2019-09-03 22:40:01,332 - INFO: Making  - bowtie2 index finished.
+2019-09-03 22:40:01,333 - INFO: Mapping reads to  bowtie2 index ...
+2019-09-03 22:40:37,447 - INFO: Mapping finished.
+2019-09-03 22:40:37,448 - INFO: Reference length: 176312 (137432, 19525, 19355)
+2019-09-03 22:40:56,078 - INFO: # mapped reads: 81104×2+4999
+2019-09-03 22:40:56,079 - INFO: # mapped pairs: 81104
+2019-09-03 22:40:56,079 - INFO: Aligned: 280.35±71.60 (312.21±41.88, 170.28±28.00, 165.18±27.56)
+2019-09-03 22:40:56,079 - INFO: Mismatched: 7.90±5.03 (9.05±4.96, 3.94±2.67, 3.76±2.53)
+2019-09-03 22:40:56,079 - INFO: Inserted: 0.09±0.86 (0.10±0.91, 0.06±0.67, 0.05±0.61)
+2019-09-03 22:40:56,079 - INFO: Deleted: 0.10±1.12 (0.12±1.27, 0.02±0.15, 0.01±0.15)
+2019-09-03 22:40:56,079 - INFO: Customized error rate: 0.0289±0.0188 (0.0297±0.0168, 0.0236±0.0162, 0.0231±0.0158)
+
