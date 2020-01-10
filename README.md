@@ -90,6 +90,7 @@ Lamiids | Solanales | Convolvulaceae | *Cuscuta campestris* Yunck. | [ERR1917165
 
 ### 50 Fungal Datasets
 Division | Class | Orders | Family | Species | SRA RunID | Read length (bp)
+---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ----------------
 Ascomycota | Pezizomycetes | Pezizales | Morchellaceae | *Morchella eximia* | [SRR5804017](https://www.ncbi.nlm.nih.gov/sra/SRR5804017) | 2*150
 Ascomycota | Pezizomycetes | Pezizales | Morchellaceae | *Morchella septimelata* | [SRR5804020](https://www.ncbi.nlm.nih.gov/sra/SRR5804020) | 2*150
 Ascomycota | Pezizomycetes | Pezizales | Tuberaceae | *Tuber calosporum* | [SRR5804115](https://www.ncbi.nlm.nih.gov/sra/SRR5804115) | 2*150
@@ -146,6 +147,7 @@ Basidiomycota | Agaricomycetes | Russulales | Russulaceae | *Lactifluus rugatus*
 The same as samples used in [MitoZ paper](https://academic.oup.com/nar/article/47/11/e63/5377471#supplementary-data).
 
 Phylum | Class | Order | Family | Species | SRA Run ID | Read length (bp)
+---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ---------------- | ----------------
 Arthropoda | Arachnida | Astigmata | Pyroglyphidae | Dermatophagoides farinae | [SRR3098386](https://www.ncbi.nlm.nih.gov/sra/SRR3098386) | 2*95
 Arthropoda | Arachnida | Astigmata | Pyroglyphidae | Dermatophagoides pteronyssinus | [SRR5863004](https://www.ncbi.nlm.nih.gov/sra/SRR5863004) | 2*300
 Arthropoda | Arachnida | Trombidiformes | Tetranychidae | Tetranychus urticae | [SRR1284940](https://www.ncbi.nlm.nih.gov/sra/SRR1284940) | 2*100
