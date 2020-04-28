@@ -9,7 +9,7 @@ fastq-dump --origfmt --split-files -X 10000000 --gzip SRR1145775
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR2057084
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR4428742
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR5028199 && rm SRR5028199_2.fastq.gz && mv SRR5028199_3.fastq.gz SRR5028199_2.fastq.gz
-fastq-dump --origfmt --split-files -X 10000000 --gzip SRR525215
+fastq-dump --origfmt --split-files -X 10000000 --gzip SRR2037123
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR5602572
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR5602573
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR5602574
@@ -50,7 +50,7 @@ fastq-dump --origfmt --split-files -X 10000000 --gzip SRR5602609
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR5602610
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR6478596
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR6932851
-fastq-dump --origfmt --split-files -X 10000000 --gzip SRR7943694
+fastq-dump --origfmt --split-files -X 10000000 --gzip SRR7630500
 
 # download 50 fungal datasets
 fastq-dump --origfmt --split-files -X 20000000 --gzip SRR5754079
