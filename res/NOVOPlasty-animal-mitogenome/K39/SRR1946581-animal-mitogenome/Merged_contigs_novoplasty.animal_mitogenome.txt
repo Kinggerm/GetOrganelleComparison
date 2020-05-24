@@ -1,0 +1,10 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+02----> REPETITIVE REGION----> 907781
+START----> 01
+907781----> END_REVERSE
+01----> REPETITIVE REGION----> 02
+
+
+Each option has a separate fasta file

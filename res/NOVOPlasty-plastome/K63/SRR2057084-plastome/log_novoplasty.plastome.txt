@@ -1,0 +1,93 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.plastome
+Type                  = chloro
+Genome range          = 15000-180000
+K-mer                 = 63
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/plant_cp.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 100.0
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR2057084_1.fastq.gz
+Reverse reads         = ../../../SRR2057084_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: GTTACCAAGGAACCATGCATAGCACTGAATAGGGAGCCGCCGAATACACCAGCTACACCTAACATGTGAAATGGATGCATAAGGATGTTGTGTTCTGCC
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 11792 bp
+Estimated gap      : -1539 bp to -1539 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 01                  : 4784 bp
+Estimated gap      : -1534 bp to -1534 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 01                  : 44145 bp
+Contig 02                  : 1469 bp
+Estimated gap      : -1539 bp to -1539 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 02                  : 43727 bp
+Contig 03                  : 4230 bp
+Estimated gap      : -1539 bp to -1539 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 4189 bp
+Estimated gap      : -1534 bp to -1534 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 6832 bp
+Estimated gap      : -342 bp to -342 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 1391 bp
+Estimated gap      : -285 bp to -285 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 10479 bp
+Estimated gap      : -274 bp to -274 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 6664 bp
+Estimated gap      : -47 bp to -47 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 9078 bp
+Estimated gap      : -282 bp to -282 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 392 bp
+
+Total contigs              : 13
+Largest contig             : 44145 bp
+Smallest contig            : 392 bp
+Average insert size        : 511 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 18362778
+Aligned reads              : 2190438
+Assembled reads            : 414552
+Organelle genome %         : 11.93 %
+Average organelle coverage : 2069
+
+----------------------------------------------------------------------------------------------------
+

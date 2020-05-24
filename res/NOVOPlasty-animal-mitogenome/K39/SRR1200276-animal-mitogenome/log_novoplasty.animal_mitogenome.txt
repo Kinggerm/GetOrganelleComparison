@@ -1,0 +1,73 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.animal_mitogenome
+Type                  = mito
+Genome range          = 12000-20000
+K-mer                 = 39
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/animal_mt.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 100
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR1200276_1.fastq.gz
+Reverse reads         = ../../../SRR1200276_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: GAACAGCTTTTATAGGTTATGTTTTACCATGAGGTCAAATATCTTTTTGAGGAGCTACAGTTATTACTAATTTATTATCAGCTATCCCTTACTTAGGTAT
+
+Start Assembly...
+
+
+-----------------Assembly 1 finished successfully: The genome has been circularized-----------------
+
+Contig 1                  : 14967 bp
+Estimated gap      : -33 bp to -33 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 2                  : 1007 bp
+
+Total contigs              : 2
+Largest contig             : 14967 bp
+Smallest contig            : 1007 bp
+Average insert size        : 540 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 128237568
+Aligned reads              : 560774
+Assembled reads            : 75428
+Organelle genome %         : 0.44 %
+Average organelle coverage : 3510
+
+----------------------------------------------------------------------------------------------------
+

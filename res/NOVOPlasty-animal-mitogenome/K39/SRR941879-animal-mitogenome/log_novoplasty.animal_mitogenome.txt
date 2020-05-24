@@ -1,0 +1,156 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.animal_mitogenome
+Type                  = mito
+Genome range          = 12000-20000
+K-mer                 = 39
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/animal_mt.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 95
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR941879_1.fastq.gz
+Reverse reads         = ../../../SRR941879_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+Forward reads without pair: 277799
+Reverse reads without pair: 277799
+
+Initial read retrieved successfully: CGCGGTAACTTGACTGTGCAAAGGTAGCATAATCATTAGTTTTTTAATTGGGGGCTGGAATGAAAGGTTTGACGGGGATTGGCTTTTTTTGTTT
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 2651 bp
+Contig 02                  : 3048 bp
+Contig 03                  : 5516 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 03                  : 456 bp
+Contig 04                  : 301 bp
+Contig 05                  : 648 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 05                  : 1257 bp
+Contig 06                  : 2197 bp
+Contig 07                  : 326 bp
+Contig 08                  : 339 bp
+Contig 09                  : 408 bp
+Contig 10                  : 471 bp
+Contig 11                  : 663 bp
+Contig 12                  : 512 bp
+Contig 13                  : 1243 bp
+Contig 14                  : 951 bp
+Contig 15                  : 729 bp
+Contig 16                  : 1195 bp
+Contig 17                  : 782 bp
+Contig 18                  : 290 bp
+Contig 19                  : 465 bp
+Contig 20                  : 300 bp
+Contig 21                  : 395 bp
+Contig 22                  : 1610 bp
+Contig 23                  : 564 bp
+Contig 24                  : 276 bp
+Contig 25                  : 417 bp
+Contig 26                  : 740 bp
+Contig 27                  : 462 bp
+Contig 28                  : 252 bp
+Contig 29                  : 499 bp
+Contig 30                  : 358 bp
+Contig 31                  : 336 bp
+Contig 32                  : 1569 bp
+Contig 33                  : 1669 bp
+Contig 34                  : 626 bp
+Contig 35                  : 436 bp
+Contig 36                  : 322 bp
+Contig 37                  : 503 bp
+Contig 38                  : 4504 bp
+Contig 39                  : 270 bp
+Contig 40                  : 329 bp
+Contig 41                  : 729 bp
+Contig 42                  : 567 bp
+Contig 43                  : 552 bp
+Contig 44                  : 487 bp
+Contig 45                  : 529 bp
+Contig 46                  : 1491 bp
+Contig 47                  : 593 bp
+Contig 48                  : 412 bp
+Contig 49                  : 299 bp
+Contig 50                  : 669 bp
+Contig 51                  : 480 bp
+Contig 52                  : 619 bp
+Contig 53                  : 795 bp
+Contig 54                  : 457 bp
+Contig 55                  : 427 bp
+Contig 56                  : 1717 bp
+Contig 57                  : 561 bp
+Contig 58                  : 1480 bp
+Contig 59                  : 715 bp
+Contig 60                  : 558 bp
+Contig 61                  : 493 bp
+Contig 62                  : 1441 bp
+Contig 63                  : 503 bp
+Contig 64                  : 287 bp
+Contig 65                  : 327 bp
+Contig 66                  : 256 bp
+Contig 67                  : 679 bp
+Contig 68                  : 313 bp
+Contig 69                  : 545 bp
+Contig 70                  : 337 bp
+Contig 71                  : 329 bp
+Contig 72                  : 369 bp
+Contig 73                  : 965 bp
+Contig 74                  : 358 bp
+Contig 75                  : 295 bp
+Contig 76                  : 460 bp
+Contig 77                  : 256 bp
+Contig 78                  : 322 bp
+Contig 79                  : 390 bp
+Contig 80                  : 370 bp
+Contig 81                  : 907 bp
+Contig 82                  : 454 bp
+
+Total contigs              : 84
+Largest contig             : 5516 bp
+Smallest contig            : 252 bp
+Average insert size        : 194 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 76205372
+Aligned reads              : 2062398
+Assembled reads            : 256844
+
+----------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,11 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+03----> 04 OR 11533
+01----> 02 OR 110609
+02----> 03 OR 1325
+04----> 1184 OR 2328 OR 05
+START----> 01
+
+
+Each option has a separate fasta file

@@ -1,0 +1,72 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.animal_mitogenome
+Type                  = mito
+Genome range          = 12000-20000
+K-mer                 = 39
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/animal_mt.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 100
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR3041429_1.fastq.gz
+Reverse reads         = ../../../SRR3041429_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: ATTGAATCGGGCCATGAAGCACGCACACACCGCCCGTCACCCTCCTCAAGTGATTAGACCCCAAAGAAACCTATTCAAACCATCACATCCACAAGAGGA
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 16022 bp
+Estimated gap      : -280 bp to -280 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 01                  : 3981 bp
+
+Total contigs              : 2
+Largest contig             : 16022 bp
+Smallest contig            : 3981 bp
+Average insert size        : 469 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 150000000
+Aligned reads              : 250262
+Assembled reads            : 69616
+Average organelle coverage : 1250
+
+----------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,75 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.plastome
+Type                  = chloro
+Genome range          = 15000-180000
+K-mer                 = 63
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/plant_cp.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 98.3
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR6932851_1.fastq.gz
+Reverse reads         = ../../../SRR6932851_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 97.90 %
+Forward reads without pair: 646530
+Reverse reads without pair: 245935
+
+Initial read retrieved successfully: AGCTGGTCTGAGAGGATGATCAGCCACACTGGGACTGAGACACGGCCCAGACTCCTACGGGAGGCAGCAGTGGGGAATCTTCCGCAATGGGCGAAAGCC
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 21022 bp
+Contig 02                  : 14577 bp
+Contig 03                  : 68460 bp
+Estimated gap      : -853 bp to -853 bp (Check manually if the two contigs overlap to merge them together!)
+Contig 03                  : 8018 bp
+
+Total contigs              : 4
+Largest contig             : 68460 bp
+Smallest contig            : 8018 bp
+Average insert size        : 179 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 19583414
+Aligned reads              : 462598
+Assembled reads            : 235810
+
+----------------------------------------------------------------------------------------------------
+

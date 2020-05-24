@@ -1,0 +1,79 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.fungal_mitogenome
+Type                  = mito
+Genome range          = 30000-250000
+K-mer                 = 39
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/fungus_mt.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 150
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR5801934_1.fastq.gz
+Reverse reads         = ../../../SRR5801934_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: ACGAAGTGAAGCATGTTATTTAATACGATAATCCGCGTAAAATCTTACCAGTTCTTGTATATTTTTATTAATGTTTATTTAATTTGAATAAGTTATTTTTCATATCTTTTTTAATTAAGTAAATTATTGTAAGAATACAGGTGTTGCAT
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 32741 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 01                  : 72158 bp
+Contig 02                  : 3225 bp
+Contig 03                  : 3789 bp
+Contig 04                  : 128424 bp
+Contig 05                  : 128531 bp
+Contig 06                  : 82731 bp
+Contig 07                  : 82630 bp
+Contig 08                  : 292 bp
+Contig 09                  : 263 bp
+
+Total contigs              : 10
+Largest contig             : 128531 bp
+Smallest contig            : 263 bp
+Average insert size        : 255 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 40000000
+Aligned reads              : 1189612
+Assembled reads            : 249892
+
+----------------------------------------------------------------------------------------------------
+

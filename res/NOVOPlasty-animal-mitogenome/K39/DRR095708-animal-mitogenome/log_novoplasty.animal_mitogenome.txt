@@ -1,0 +1,72 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.animal_mitogenome
+Type                  = mito
+Genome range          = 12000-20000
+K-mer                 = 39
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/animal_mt.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 100
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../DRR095708_1.fastq.gz
+Reverse reads         = ../../../DRR095708_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: TTAGATGTTGATACACGAGCTTATTTTACTTCAGCAACAATAATTATTGCTGTTCCTACAGGAATTAAAGTATTTAGATGATTAGCAACATATCATGGA
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 6187 bp
+Estimated gap      : 0 bp to 0 bp
+Contig 01                  : 869 bp
+
+Total contigs              : 2
+Largest contig             : 6187 bp
+Smallest contig            : 869 bp
+Average insert size        : 496 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 25919488
+Aligned reads              : 81478
+Assembled reads            : 19304
+Average organelle coverage : 1152
+
+----------------------------------------------------------------------------------------------------
+

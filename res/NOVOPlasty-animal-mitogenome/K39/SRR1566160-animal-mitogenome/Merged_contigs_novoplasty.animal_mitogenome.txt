@@ -1,0 +1,9 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+215329----> 215329 OR 02
+START----> 01
+01----> 215329 OR 02
+
+
+Each option has a separate fasta file

@@ -1,0 +1,75 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.animal_mitogenome
+Type                  = mito
+Genome range          = 12000-20000
+K-mer                 = 39
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/animal_mt.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 100
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR1657027_1.fastq.gz
+Reverse reads         = ../../../SRR1657027_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 100.00 %
+
+Initial read retrieved successfully: TCCAAACTAATTTGATCAACGGAACAAGTTACCCTAGGGATAACAGCGCAATCCTATTATAGAGTCCATATCGACAATAGGGTTTACGACCTCGATGTTG
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 16846 bp
+Contig 02                  : 207 bp
+Contig 03                  : 209 bp
+Contig 04                  : 439 bp
+Contig 05                  : 870 bp
+
+Total contigs              : 5
+Largest contig             : 16846 bp
+Smallest contig            : 207 bp
+Average insert size        : 190 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 16809984
+Aligned reads              : 62710
+Assembled reads            : 28084
+Organelle genome %         : 0.37 %
+Average organelle coverage : 366
+
+----------------------------------------------------------------------------------------------------
+

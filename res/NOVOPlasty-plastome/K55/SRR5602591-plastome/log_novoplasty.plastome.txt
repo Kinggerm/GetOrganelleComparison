@@ -1,0 +1,72 @@
+
+
+-----------------------------------------------
+NOVOPlasty: The Organelle Assembler
+Version 2.7.2
+Author: Nicolas Dierckxsens, (c) 2015-2018
+-----------------------------------------------
+
+
+Input parameters from the configuration file:   *** Verify if everything is correct ***
+
+Project:
+----------------------
+Project name          = novoplasty.plastome
+Type                  = chloro
+Genome range          = 15000-180000
+K-mer                 = 55
+Max memory            = 
+Extended log          = 0
+Save assembled reads  = yes
+Seed Input            = ../../../local_seed/plant_cp.fasta
+Reference sequence    = 
+Variance detection    = no
+Heteroplasmy          = 
+HP exclude list       = 
+Chloroplast sequence  = 
+
+Dataset 1:
+----------------------
+Read Length           = 296.7
+Insert size           = 300
+Platform              = illumina
+Single/Paired         = PE
+Combined reads        = 
+Forward reads         = ../../../SRR5602591_1.fastq.gz
+Reverse reads         = ../../../SRR5602591_2.fastq.gz
+
+Optional:
+----------------------
+Insert size auto      = yes
+Insert range          = 1.8
+Insert range strict   = 1.3
+Use Quality Scores    = no
+
+Subsampled fraction: 99.98 %
+Forward reads without pair: 576
+Reverse reads without pair: 174
+
+Initial read retrieved successfully: TTTGCACGGTTAATGATATCAGCCCAAGTGTTAATAACACGACCTTGACTGTCAACTACGGATTGATTAAAGTTGAATCCATTTAGGTTGAAAGCCATGGTGCTGATACCTAAAGCAGTGAACCAAATACCCACTACAGGCCAAGCAGCTAAAAAGAAATGTAAGGAGCGAGAATTGTTGAAACTAGCATATTGGAAGATCAATCGGCCAAAATAACCATGAGCAGCAACGATATTATAAGTTTCTTCCTCTTGACCGAATCTGTAACCTTCATTAGCAGATTCATTTTCTGTGGTTTC
+
+Start Assembly...
+
+
+------------Assembly 1 finished: Contigs are automatically merged in Merged_contigs file------------
+
+Contig 01                  : 180073 bp
+
+Total contigs              : 1
+Largest contig             : 180073 bp
+Smallest contig            : 180073 bp
+Average insert size        : 525 bp
+
+
+-----------------------------------------Input data metrics-----------------------------------------
+
+Total reads                : 2677286
+Aligned reads              : 40190
+Assembled reads            : 30398
+Average organelle coverage : 66
+
+----------------------------------------------------------------------------------------------------
+

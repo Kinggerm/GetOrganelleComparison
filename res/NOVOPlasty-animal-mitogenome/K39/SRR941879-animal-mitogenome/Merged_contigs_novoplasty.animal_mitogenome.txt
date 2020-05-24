@@ -1,0 +1,70 @@
+LINKS BETWEEN CONTIGS
+---------------------
+
+2195----> 
+2276----> 
+1107---->  OR 
+02----> 02 OR 03
+33----> 21569 OR 78
+3358----> 
+15----> 18 OR 20 OR 81
+12197----> 
+32----> 21569 OR 78
+4782----> 
+1663---->  OR 
+09----> 12 OR 23
+29----> 36 OR 1499
+14----> 60 OR 73 OR 57
+21----> 31 OR 37
+37----> 2436 OR 1436
+18----> 50 OR 53
+08----> 32 OR 33
+16----> 69 OR 25
+34----> 3358
+07----> 09 OR 46
+36----> 2322 OR 1322
+30----> 3358
+19----> 31 OR 30
+06----> 199 OR 56
+17----> 4782
+START----> 01
+11----> 3663
+4178----> 
+04----> 38 OR 06
+27----> 74 OR 61
+35----> 2436 OR 1436
+2107----> 2127 OR 
+4276----> 
+13----> 52 OR 21 OR 19
+2178----> 
+2663---->  OR 
+28----> 2252 OR 49
+22----> 39 OR 51 OR 2156 OR 79
+25----> 70 OR 63
+3180---->  OR 
+2181---->  OR 
+1276----> 
+24----> 4276
+2197---->  OR 
+32197----> 
+1139----> 
+26----> 1107 OR 2127 OR 65
+23----> 1151 OR 66 OR 28
+01----> 02 OR 03
+1197---->  OR 
+2110----> 2172 OR 29 OR 29
+31----> 3358
+10----> 58
+12----> 1173 OR 29 OR 2173 OR 2110 OR 26
+1358---->  OR 
+20----> 55 OR 64 OR 2181 OR 2178 OR 1139 OR 1139 OR 2178 OR 24
+03----> 04 OR 05
+05----> 1199 OR 1197 OR 2197 OR 2199 OR 22 OR 2195
+
+(Contigs broken up by long homopolymer stretches are linked together as one contig with 15 N's, they can be merged manually in some cases)
+
+(If the region before and after the N zone overlaps, you can merge them by deleting the regions next to N zone from both sides (those are the least reliable))
+
+
+
+Each option has a separate fasta file
