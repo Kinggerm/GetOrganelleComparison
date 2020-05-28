@@ -1,0 +1,6 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+contig_1--64628+	fungus_mt	cox2	cox2	cox2	cox2(192-931,fungus_mt)
+contig_2--64698+	fungus_mt	atp9	atp9	atp9	atp9(1089-1310,fungus_mt)
+contig_3--64700+	fungus_mt	ai3,ai4,ai5,ai7,atp6,cox1,rrnL	cox1>>ai7>>ai5>>ai4>>ai3>>atp6>>rrnL	cox1>>ai7>>ai5>>ai4>>ai3>>atp6>>rrnL	cox1(1139-2717,fungus_mt)>>ai7(1290-2235,fungus_mt)>>ai5(1290-2086,fungus_mt)>>ai4(1290-1990,fungus_mt)>>ai3(1290-1789,fungus_mt)>>atp6(3485-4043,fungus_mt)>>rrnL(5106-8552,fungus_mt)
+contig_4--64710+	fungus_mt	nad2,nad3,nad4,nad4L,nad5,nad6,rrnS	rrnS>>nad3>>nad2>>nad6>>nad4>>nad5>>nad4L>>nad4	rrnS>>nad3>>nad2>>nad6>>nad4>>nad5>>nad4L>>nad4	rrnS(553-1867,fungus_mt)>>nad3(2933-3268,fungus_mt)>>nad2(3438-4908,fungus_mt)>>nad6(5210-5758,fungus_mt)>>nad4(8346-9688,fungus_mt)>>nad5(10023-11985,fungus_mt)>>nad4L(11993-12261,fungus_mt)>>nad4(12008-12259,fungus_mt)
+contig_5--64714+	fungus_mt	cob,cytb,nad1	nad1>>cob>>cytb	nad1>>cob>>cytb	nad1(74-1082,fungus_mt)>>cob(1726-2882,fungus_mt)>>cytb(1726-2624,fungus_mt)

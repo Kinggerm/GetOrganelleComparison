@@ -1,0 +1,11 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+Contig01+39327001__0	animal_mt	cox1,nad2	nad2>>cox1	nad2>>cox1	nad2(1349-2374,animal_mt)>>cox1(2579-3208,animal_mt)
+Contig02+1930__23	animal_mt	cox1,cox2	cox1>>cox2	cox1>>cox2	cox1(1-1068,animal_mt)>>cox2(1142-1268,animal_mt)
+Contig03+21268__33	animal_mt	cox2	cox2	cox2	cox2(1-474,animal_mt)
+Contig04+2474__38	animal_mt	atp6,cox2	cox2>>atp6	cox2>>atp6	cox2(1-279,animal_mt)>>atp6(579-955,animal_mt)
+Contig05+144039252__46	animal_mt	atp6,cox3,nad3	atp6>>cox3>>nad3	atp6>>cox3>>nad3	atp6(1-427,animal_mt)>>cox3(398-1186,animal_mt)>>nad3(1270-1623,animal_mt)
+Contig07+1583__66	animal_mt	nad4,nad5	nad5>>nad4	nad5>>nad4	nad5(1-1419,animal_mt)>>nad4(1462-2091,animal_mt)
+Contig08+22091__81	animal_mt	nad4	nad4	nad4	nad4(1-671,animal_mt)
+Contig09+1671__87	animal_mt	nad4,nad4L	nad4>>nad4L	nad4>>nad4L	nad4(7-318,animal_mt)>>nad4L(312-455,animal_mt)
+Contig10+1459__92	animal_mt	cytb,nad1,nad4L,nad6	nad4L>>nad6>>cytb>>nad1	nad4L>>nad6>>cytb>>nad1	nad4L(11-333,animal_mt)>>nad6(495-960,animal_mt)>>cytb(970-2114,animal_mt)>>nad1(2177-2796,animal_mt)
+Contig11+81715461__112	animal_mt	nad1,rrnL,rrnS	nad1>>rrnS>>rrnL>>rrnS>>rrnL	nad1>>rrnS>>rrnL>>rrnS>>rrnL	nad1(1-501,animal_mt)>>rrnS(523-1880,animal_mt)>>rrnL(525-1871,animal_mt)>>rrnS(1962-2747,animal_mt)>>rrnL(1964-2730,animal_mt)

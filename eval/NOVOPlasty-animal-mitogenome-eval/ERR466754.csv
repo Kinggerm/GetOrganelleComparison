@@ -1,0 +1,4 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+Contig01+87350961__0	animal_mt	rrnL,rrnS	rrnS>>rrnL	rrnS>>rrnL	rrnS(12463-13119,animal_mt)>>rrnL(13211-13397,animal_mt)
+Contig02+87349451__91	animal_mt	rrnL	rrnL	rrnL	rrnL(112-308,animal_mt)
+Contig02+87349451__95	animal_mt	rrnL	rrnL	rrnL	rrnL(1-377,animal_mt)

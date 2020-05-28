@@ -1,0 +1,2 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+Contig01+155080192__0	fungus_mt	nad2,nad3,nad6,rrnS	nad6>>nad2>>nad3>>rrnS	nad6>>nad2>>nad3>>rrnS	nad6(2158-2724,fungus_mt)>>nad2(3084-4554,fungus_mt)>>nad3(4730-5069,fungus_mt)>>rrnS(6137-7460,fungus_mt)

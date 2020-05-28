@@ -1,0 +1,5 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+contig_1--46438594+	animal_mt	cytb,nad1,nad4L,nad6,rrnL,rrnS	rrnL>>rrnS>>nad1>>cytb>>nad6>>nad4L	rrnL>>rrnS>>nad1>>cytb>>nad6>>nad4L	rrnL(1-785,animal_mt)>>rrnS(2-759,animal_mt)>>nad1(919-1859,animal_mt)>>cytb(1923-3068,animal_mt)>>nad6(3072-3539,animal_mt)>>nad4L(3734-4025,animal_mt)
+contig_2--46566920+	animal_mt	nad4,nad5	nad5>>nad4	nad5>>nad4	nad5(95-1835,animal_mt)>>nad4(1877-2744,animal_mt)
+contig_3--46576162+	animal_mt	atp6,cox2,cox3,nad3	nad3>>cox3>>atp6>>cox2	nad3>>cox3>>atp6>>cox2	nad3(74-306,animal_mt)>>cox3(355-1188,animal_mt)>>atp6(1188-1868,animal_mt)>>cox2(2166-2846,animal_mt)
+contig_4--46581482+	animal_mt	cox1	cox1	cox1	cox1(1-1543,animal_mt)

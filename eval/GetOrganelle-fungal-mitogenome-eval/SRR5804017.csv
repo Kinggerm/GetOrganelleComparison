@@ -1,0 +1,9 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+contig_1--33732+,33450+,35974-	fungus_mt	cob,rrnL	rrnL>>cob	rrnL>>cob	rrnL(1-131,fungus_mt)>>cob(2188-2447,fungus_mt)
+contig_2--35596+,35260-,36332-	fungus_mt	cox1	cox1	cox1	cox1(342-506,fungus_mt)
+contig_3--35842-,33450+,36320-	fungus_mt	rrnL	rrnL	rrnL	rrnL(2547-7320,fungus_mt)
+contig_4--36174+	fungus_mt	nad5	nad5	nad5	nad5(293-1152,fungus_mt)
+contig_5--36198+	fungus_mt	nad4	nad4	nad4	nad4(1-2794,fungus_mt)
+contig_6--36346+	fungus_mt	nad4,nad4L,nad5	nad4>>nad4L>>nad5	nad4>>nad4L>>nad5	nad4(569-807,fungus_mt)>>nad4L(569-809,fungus_mt)>>nad5(6680-7004,fungus_mt)
+contig_7--36358+,35260-,36362-	fungus_mt	cox3	cox3	cox3	cox3(685-794,fungus_mt)
+contig_8--36360+	fungus_mt	rrnS	rrnS	rrnS	rrnS(294-5081,fungus_mt)

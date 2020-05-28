@@ -1,0 +1,4 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+contig_1--730476+	animal_mt	nad5	nad5	nad5	nad5(962-1308,animal_mt)
+contig_2--11312714+	animal_mt	cox1	cox1	cox1	cox1(117-769,animal_mt)
+contig_3--11399634+	animal_mt	nad2	nad2	nad2	nad2(5-266,animal_mt)

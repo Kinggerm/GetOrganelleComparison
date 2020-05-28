@@ -1,0 +1,2 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+36794+(circular)	animal_mt	atp6,cox1,cox2,cox3,cytb,nad1,nad4,nad5,rrnL,rrnS	cytb>>nad5>>nad4>>cox3>>atp6>>cox2>>cox1>>nad1>>rrnL>>rrnS	cytb>>nad5>>nad4>>cox3>>atp6>>cox2>>cox1>>nad1>>rrnL>>rrnS	cytb(1133-2241,animal_mt)>>nad5(3244-4427,animal_mt)>>nad4(4965-6218,animal_mt)>>cox3(6994-7778,animal_mt)>>atp6(7778-8458,animal_mt)>>cox2(8696-9373,animal_mt)>>cox1(9506-11065,animal_mt)>>nad1(12696-13640,animal_mt)>>rrnL(13742-15298,animal_mt)>>rrnS(15370-16214,animal_mt)

@@ -1,0 +1,3 @@
+EDGE	database	loci	loci_gene_sequential	loci_sequential	details
+Contig265+93436502__3357	fungus_mt	cob,nad1	nad1>>cob	nad1>>cob	nad1(2673-5162,fungus_mt)>>cob(5800-9178,fungus_mt)
+Contig333+4289062__5114	fungus_mt	nad1,rrnS	nad1>>rrnS	nad1>>rrnS	nad1(1383-2042,fungus_mt)>>rrnS(6681-8762,fungus_mt)
