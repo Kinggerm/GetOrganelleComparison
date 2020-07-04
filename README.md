@@ -9,7 +9,7 @@ This repository aims to make all our tests/comparisons reproducible. These  main
 
 If you want to reproduce our results on your own computer, please
 * **Download files in GetOrganelleComparison/bin** using `svn co https://github.com/Kinggerm/GetOrganelleComparison/trunk/bin` (ca. 23Mb uncompressed). You can also use `git clone git://github.com/Kinggerm/GetOrganelleComparison` to download the whole repository (ca. 1.9Gb uncompressed).
-* **Download the dataset** (see <a href="#samples">Samples</a>) using `1.downloading_data.sh` in `GetOrganelleComparison/bin`.
+* **Download the dataset** (see <a href="#sample-info">Samples</a>) using `1.downloading_data.sh` in `GetOrganelleComparison/bin`.
 * **Download and install [GetOrganelle v1.6.2](https://github.com/Kinggerm/GetOrganelle/releases/tag/v1.6.2)** as well as its dependencies ([instruction](https://github.com/Kinggerm/GetOrganelle/wiki/Installation#2-using-the-setuppy)).
 NOVOPlasty v2.7.2 is included in GetOrganelleComparison/bin and not needed to be specifically installed. 
 
@@ -21,7 +21,7 @@ After finishing the <a href="#preparing">Preparing</a>, you can follow the follo
 * Execute `4.evaluating_Published_plastomes.sh` to evaluate the published plastomes.
 * Execute `5-1.assembling_56_animal_mitogenomes_using_GetOrganelle.sh` to assemble animal mitogenoms using GetOrganelle and execute `5-2.evaluating_GetOrganelle_animal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
 * Execute `6-1.assembling_50_fungal_mitogenomes_using_GetOrganelle.sh` to assemble fungal mitogenoms using GetOrganelle and execute `6-2.evaluating_GetOrganelle_fungal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
-* Execute `7.assessing_GetOrganelle_performance_characteristics.sh` to assess GetOrganelle using a gradient of word size ratio values, different sizes of the reference, pre-grouping or not. The raw data is a reduced size (500M) of *Haberlea rhodopensis* (SRR4428742; see <a href="#samples">Samples</a>).
+* Execute `7.assessing_GetOrganelle_performance_characteristics.sh` to assess GetOrganelle using a gradient of word size ratio values, different sizes of the reference, pre-grouping or not. The raw data is a reduced size (500M) of *Haberlea rhodopensis* (SRR4428742; see <a href="#sample-info">Samples</a>).
 * Execute `8-1.assembling_56_animal_mitogenomes_using_NOVOPlasty.sh` to assemble animal mitogenoms using NOVOPlasty and execute `8-2.evaluating_NOVOPlasty_animal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
 * Execute `9-1.assembling_50_fungal_mitogenomes_using_NOVOPlasty.sh` to assemble fungal mitogenoms using GetOrganelle and execute `9-2.evaluating_NOVOPlasty_fungal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
 
