@@ -52,6 +52,10 @@ fastq-dump --origfmt --split-files -X 10000000 --gzip SRR6478596
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR6932851
 fastq-dump --origfmt --split-files -X 10000000 --gzip SRR7630500
 
+# download extra 2 plant datasets
+fastq-dump --origfmt --split-files -X 15000000 --gzip SRR4243000
+fastq-dump --origfmt --split-files -X 15000000 --gzip SRR2147183
+
 # download 50 fungal datasets
 fastq-dump --origfmt --split-files -X 20000000 --gzip SRR5754079
 fastq-dump --origfmt --split-files -X 20000000 --gzip SRR5764827
@@ -161,3 +165,5 @@ fastq-dump --origfmt --split-files -X 75000000 --gzip SRR847379
 fastq-dump --origfmt --split-files -X 75000000 --gzip SRR940268
 fastq-dump --origfmt --split-files -X 75000000 --gzip SRR941879
 fastq-dump --origfmt --split-files -X 75000000 --gzip SRR955308
+
+

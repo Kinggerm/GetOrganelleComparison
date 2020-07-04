@@ -1,0 +1,105 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 SRR2147183_1.fastq.gz -2 SRR2147183_2.fastq.gz -F embplant_pt -o Daucus_carota_SRR2147183-plastome -R 10
+
+2020-06-29 11:38:39,911 - INFO: Pre-reading fastq ...
+2020-06-29 11:38:39,912 - INFO: Estimating reads to use ...
+2020-06-29 11:38:41,218 - INFO: Tasting 100000+100000 reads ...
+2020-06-29 11:39:01,096 - INFO: Estimating reads to use finished.
+2020-06-29 11:39:01,097 - INFO: Unzipping reads file: SRR2147183_1.fastq.gz (667713154 bytes)
+2020-06-29 11:39:22,613 - INFO: Unzipping reads file: SRR2147183_2.fastq.gz (696054927 bytes)
+2020-06-29 11:39:44,231 - INFO: Counting read qualities ...
+2020-06-29 11:39:44,364 - INFO: Identified quality encoding format = Illumina 1.8+
+2020-06-29 11:39:44,365 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2020-06-29 11:39:44,442 - INFO: Mean error rate = 0.0003
+2020-06-29 11:39:44,444 - INFO: Counting read lengths ...
+2020-06-29 11:40:18,466 - INFO: Mean = 99.8 bp, maximum = 101 bp.
+2020-06-29 11:40:18,466 - INFO: Reads used = 10000000+10000000
+2020-06-29 11:40:18,466 - INFO: Pre-reading fastq finished.
+
+2020-06-29 11:40:18,467 - INFO: Making seed reads ...
+2020-06-29 11:40:18,467 - INFO: Seed bowtie2 index existed!
+2020-06-29 11:40:18,467 - INFO: Mapping reads to seed bowtie2 index ...
+2020-06-29 11:55:14,247 - INFO: Mapping finished.
+2020-06-29 11:55:14,247 - INFO: Seed reads made: Daucus_carota_SRR2147183-plastome/seed/embplant_pt.initial.fq (158931546 bytes)
+2020-06-29 11:55:14,248 - INFO: Making seed reads finished.
+
+2020-06-29 11:55:14,248 - INFO: Checking seed reads and parameters ...
+2020-06-29 11:55:14,248 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2020-06-29 11:55:14,248 - INFO: If the result graph is not a circular organelle genome, 
+2020-06-29 11:55:14,248 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2020-06-29 11:56:04,578 - INFO: Pre-assembling mapped reads ...
+2020-06-29 11:57:02,325 - INFO: Pre-assembling mapped reads finished.
+2020-06-29 11:57:02,326 - INFO: Estimated embplant_pt-hitting base-coverage = 526.83
+2020-06-29 11:57:02,326 - INFO: Reads reduced to = 9490719+9490719
+2020-06-29 11:57:02,326 - INFO: Adjusting expected embplant_pt base coverage to 500.00
+2020-06-29 11:57:02,327 - INFO: Estimated word size(s): 74
+2020-06-29 11:57:02,327 - INFO: Setting '-w 74'
+2020-06-29 11:57:02,327 - INFO: Setting '--max-extending-len inf'
+2020-06-29 11:57:05,709 - INFO: Checking seed reads and parameters finished.
+
+2020-06-29 11:57:05,710 - INFO: Making read index ...
+2020-06-29 11:58:37,613 - INFO: For Daucus_carota_SRR2147183-plastome/1-SRR2147183_1.fastq.gz.fastq, only top 9490719 reads are used in downstream analysis.
+2020-06-29 12:00:03,593 - INFO: For Daucus_carota_SRR2147183-plastome/2-SRR2147183_2.fastq.gz.fastq, only top 9490719 reads are used in downstream analysis.
+2020-06-29 12:00:24,266 - INFO: Mem 3.616 G, 16774607 candidates in all 18981438 reads
+2020-06-29 12:00:24,336 - INFO: Pre-grouping reads ...
+2020-06-29 12:00:24,336 - INFO: Setting '--pre-w 74'
+2020-06-29 12:00:26,590 - INFO: Mem 3.164 G, 200000/1028902 used/duplicated
+2020-06-29 12:00:40,049 - INFO: Mem 3.706 G, 6154 groups made.
+2020-06-29 12:00:47,643 - INFO: Making read index finished.
+
+2020-06-29 12:00:47,644 - INFO: Extending ...
+2020-06-29 12:00:47,644 - INFO: Adding initial words ...
+2020-06-29 12:01:04,568 - INFO: AW 1316084
+2020-06-29 12:02:43,004 - INFO: Round 1: 16774607/16774607 AI 477038 AW 2844117 Mem 1.566
+2020-06-29 12:04:16,648 - INFO: Round 2: 16774607/16774607 AI 751641 AW 4744849 Mem 1.628
+2020-06-29 12:05:50,491 - INFO: Round 3: 16774607/16774607 AI 885283 AW 5925453 Mem 1.753
+2020-06-29 12:07:24,561 - INFO: Round 4: 16774607/16774607 AI 986354 AW 6833251 Mem 1.753
+2020-06-29 12:08:53,829 - INFO: Round 5: 16774607/16774607 AI 1081672 AW 7720399 Mem 1.753
+2020-06-29 12:10:27,639 - INFO: Round 6: 16774607/16774607 AI 1343555 AW 9754643 Mem 1.935
+2020-06-29 12:12:06,523 - INFO: Round 7: 16774607/16774607 AI 1611203 AW 11978343 Mem 2.529
+2020-06-29 12:13:37,256 - INFO: Round 8: 16774607/16774607 AI 1747274 AW 13331395 Mem 2.699
+2020-06-29 12:15:01,099 - INFO: Round 9: 16774607/16774607 AI 1847664 AW 14318959 Mem 2.824
+2020-06-29 12:16:25,119 - INFO: Round 10: 16774607/16774607 AI 1931468 AW 15162367 Mem 2.93
+2020-06-29 12:16:25,120 - INFO: Hit the round limit 10 and terminated ...
+2020-06-29 12:17:15,685 - INFO: Extending finished.
+
+2020-06-29 12:17:16,818 - INFO: Separating filtered fastq file ... 
+2020-06-29 12:17:29,154 - INFO: Setting '-k 21,55,85'
+2020-06-29 12:17:29,154 - INFO: Assembling using SPAdes ...
+2020-06-29 13:18:15,778 - INFO: Insert size = 282.216, deviation = 80.731, left quantile = 186, right quantile = 377
+2020-06-29 13:18:15,779 - INFO: Assembling finished.
+
+2020-06-29 13:18:15,780 - INFO: Slimming assembly graphs ...
+2020-06-29 13:18:18,693 - INFO: Slimming Daucus_carota_SRR2147183-plastome/filtered_spades/K85/assembly_graph.fastg finished!
+2020-06-29 13:18:22,057 - INFO: Slimming Daucus_carota_SRR2147183-plastome/filtered_spades/K55/assembly_graph.fastg finished!
+2020-06-29 13:18:22,057 - INFO: Slimming assembly graphs finished
+
+2020-06-29 13:18:22,057 - INFO: Extracting embplant_pt from the assemblies ...
+2020-06-29 13:18:22,058 - INFO: Disentangling Daucus_carota_SRR2147183-plastome/filtered_spades/K85/assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg as a circular genome ... 
+2020-06-29 13:18:22,917 - INFO: Vertex_4159027 #copy = 1
+2020-06-29 13:18:22,918 - INFO: Vertex_4177275_4134267_4093979_996400_4117355_122224_4452369_4290483_4363803 #copy = 1
+2020-06-29 13:18:22,918 - INFO: Vertex_4432609_4662627_4158953_4424639_4142505 #copy = 2
+2020-06-29 13:18:22,918 - INFO: Average embplant_pt kmer-coverage = 84.627
+2020-06-29 13:18:22,918 - INFO: Average embplant_pt base-coverage = 534.644
+2020-06-29 13:18:22,918 - INFO: Writing output ...
+2020-06-29 13:18:23,047 - WARNING: More than one circular genome structure produced ...
+2020-06-29 13:18:23,048 - WARNING: Please check the final result to confirm whether they are simply flip-flop configurations!
+2020-06-29 13:18:23,053 - INFO: Writing PATH1 of complete embplant_pt to Daucus_carota_SRR2147183-plastome/embplant_pt.K85.complete.graph1.1.path_sequence.fasta
+2020-06-29 13:18:23,074 - INFO: Writing PATH2 of complete embplant_pt to Daucus_carota_SRR2147183-plastome/embplant_pt.K85.complete.graph1.2.path_sequence.fasta
+2020-06-29 13:18:23,074 - INFO: Writing GRAPH to Daucus_carota_SRR2147183-plastome/embplant_pt.K85.complete.graph1.selected_graph.gfa
+2020-06-29 13:18:23,113 - INFO: Result status of embplant_pt: circular genome
+2020-06-29 13:18:23,240 - INFO: Please visualize Daucus_carota_SRR2147183-plastome/filtered_K85.assembly_graph.fastg.extend-embplant_pt-embplant_mt.fastg using Bandage to confirm the final result.
+2020-06-29 13:18:23,240 - INFO: Writing output finished.
+2020-06-29 13:18:23,241 - INFO: Extracting embplant_pt from the assemblies finished.
+
+
+Total cost 5983.86 s
+Thank you!

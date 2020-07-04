@@ -1,0 +1,77 @@
+
+GetOrganelle v1.6.2
+
+get_organelle_from_reads.py assembles organelle genomes from genome skimming data.
+Find updates in https://github.com/Kinggerm/GetOrganelle and see README.md for more information.
+
+Python 3.6.5 (default, Sep 20 2018, 17:13:01)  [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+Python libs: numpy 1.15.1; sympy 1.3; scipy 1.1.0; psutil 5.4.7
+Dependencies: Bowtie2 2.3.5.1; SPAdes 3.13.0; Blast 2.2.30
+/data/jinjianjun/.pyenv/versions/3.6.5/bin/get_organelle_from_reads.py -1 ERR1917165_1.fastq.gz -2 ERR1917165_2.fastq.gz -F embplant_pt -o fast--ERR1917165-plastome --fast -t 1
+
+2020-06-29 12:03:17,489 - INFO: Pre-reading fastq ...
+2020-06-29 12:03:17,489 - INFO: Estimating reads to use ...
+2020-06-29 12:03:18,758 - INFO: Tasting 100000+100000 reads ...
+2020-06-29 12:04:07,840 - INFO: Estimating reads to use finished.
+2020-06-29 12:04:07,842 - INFO: Unzipping reads file: ERR1917165_1.fastq.gz (2540797864 bytes)
+2020-06-29 12:04:37,896 - INFO: Unzipping reads file: ERR1917165_2.fastq.gz (2683034416 bytes)
+2020-06-29 12:05:07,669 - INFO: Counting read qualities ...
+2020-06-29 12:05:08,015 - INFO: Identified quality encoding format = Sanger
+2020-06-29 12:05:08,018 - INFO: Trimming bases with qualities (0.00%): 33..33  !
+2020-06-29 12:05:08,304 - INFO: Mean error rate = 0.033
+2020-06-29 12:05:08,312 - INFO: Counting read lengths ...
+2020-06-29 12:05:32,154 - INFO: Mean = 301.0 bp, maximum = 301 bp.
+2020-06-29 12:05:32,155 - INFO: Reads used = 4086825+4086825
+2020-06-29 12:05:32,155 - INFO: Pre-reading fastq finished.
+
+2020-06-29 12:05:32,155 - INFO: Making seed reads ...
+2020-06-29 12:05:32,156 - INFO: Seed bowtie2 index existed!
+2020-06-29 12:05:32,156 - INFO: Mapping reads to seed bowtie2 index ...
+2020-06-29 12:22:52,294 - INFO: Mapping finished.
+2020-06-29 12:22:52,295 - INFO: Seed reads made: fast--ERR1917165-plastome/seed/embplant_pt.initial.fq (272537974 bytes)
+2020-06-29 12:22:52,295 - INFO: Making seed reads finished.
+
+2020-06-29 12:22:52,295 - INFO: Checking seed reads and parameters ...
+2020-06-29 12:22:52,296 - INFO: The automatically-estimated parameter(s) do not ensure the best choice(s).
+2020-06-29 12:22:52,296 - INFO: If the result graph is not a circular organelle genome, 
+2020-06-29 12:22:52,296 - INFO:   you could adjust the value(s) of '-w'/'-R' for another new run.
+2020-06-29 12:23:39,456 - INFO: Pre-assembling mapped reads ...
+2020-06-29 12:34:28,735 - INFO: Pre-assembling mapped reads finished.
+2020-06-29 12:34:28,736 - INFO: Estimated embplant_pt-hitting base-coverage = 1106.08
+2020-06-29 12:34:28,736 - INFO: Reads reduced to = 1847431+1847431
+2020-06-29 12:34:28,736 - INFO: Adjusting expected embplant_pt base coverage to 500.00
+2020-06-29 12:34:28,737 - INFO: Estimated word size(s): 146
+2020-06-29 12:34:28,737 - INFO: Setting '-w 146'
+2020-06-29 12:34:28,737 - INFO: Setting '--max-extending-len inf'
+2020-06-29 12:34:31,015 - INFO: Checking seed reads and parameters finished.
+
+2020-06-29 12:34:31,016 - INFO: Making read index ...
+2020-06-29 12:35:03,715 - INFO: For fast--ERR1917165-plastome/1-ERR1917165_1.fastq.gz.fastq, only top 1847431 reads are used in downstream analysis.
+2020-06-29 12:35:35,565 - INFO: For fast--ERR1917165-plastome/2-ERR1917165_2.fastq.gz.fastq, only top 1847431 reads are used in downstream analysis.
+2020-06-29 12:35:40,705 - INFO: Mem 2.361 G, 3675633 candidates in all 3694862 reads
+2020-06-29 12:35:40,859 - INFO: Pre-grouping reads ...
+2020-06-29 12:35:40,859 - INFO: Setting '--pre-w 146'
+2020-06-29 12:35:41,353 - INFO: Mem 2.177 G, 13443/13443 used/duplicated
+2020-06-29 12:35:49,629 - INFO: Mem 2.234 G, 154 groups made.
+2020-06-29 12:35:51,128 - INFO: Making read index finished.
+
+2020-06-29 12:35:51,129 - INFO: Extending ...
+2020-06-29 12:35:51,129 - INFO: Adding initial words ...
+2020-06-29 12:38:04,048 - INFO: AW 56036034
+2020-06-29 12:38:04,084 - INFO: Round 1: 1/3675633 AI 0 AW 56036034 Mem 12.829
+2020-06-29 12:38:04,084 - INFO: Hit the words limit and terminated ...
+2020-06-29 12:38:04,084 - WARNING: Terminated at an insufficient number of rounds, see '--max-n-words' for more.
+2020-06-29 12:44:15,032 - INFO: Extending finished.
+
+2020-06-29 12:44:16,367 - INFO: Separating filtered fastq file ... 
+2020-06-29 12:44:16,370 - WARNING: No paired reads found?!
+2020-06-29 12:44:16,370 - INFO: Setting '-k 21,55,85,115'
+2020-06-29 12:44:16,370 - INFO: Assembling using SPAdes ...
+2020-06-29 12:44:16,869 - ERROR: Error in SPAdes: 
+== Error ==  You should specify at least one file with reads!
+
+
+2020-06-29 12:44:16,869 - ERROR: Assembling failed.
+
+Total cost 2459.92 s
+Thank you!

@@ -1,0 +1,54 @@
+# fast mode
+get_organelle_from_reads.py -1 SRR5602593_1.fastq.gz -2 SRR5602593_2.fastq.gz -F plant_cp -o fast--SRR5602593-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602583_1.fastq.gz -2 SRR5602583_2.fastq.gz -F plant_cp -o fast--SRR5602583-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602588_1.fastq.gz -2 SRR5602588_2.fastq.gz -F plant_cp -o fast--SRR5602588-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602608_1.fastq.gz -2 SRR5602608_2.fastq.gz -F plant_cp -o fast--SRR5602608-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602587_1.fastq.gz -2 SRR5602587_2.fastq.gz -F plant_cp -o fast--SRR5602587-plastome --fast -t 1
+get_organelle_from_reads.py -1 ERR2206741_1.fastq.gz -2 ERR2206741_2.fastq.gz -F plant_cp -o fast--ERR2206741-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602607_1.fastq.gz -2 SRR5602607_2.fastq.gz -F plant_cp -o fast--SRR5602607-plastome --fast -t 1
+get_organelle_from_reads.py -1 ERR1917165_1.fastq.gz -2 ERR1917165_2.fastq.gz -F plant_cp -o fast--ERR1917165-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602584_1.fastq.gz -2 SRR5602584_2.fastq.gz -F plant_cp -o fast--SRR5602584-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602592_1.fastq.gz -2 SRR5602592_2.fastq.gz -F plant_cp -o fast--SRR5602592-plastome --fast -t 1
+get_organelle_from_reads.py -1 ERR268390_1.fastq.gz -2 ERR268390_2.fastq.gz -F plant_cp -o fast--ERR268390-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602610_1.fastq.gz -2 SRR5602610_2.fastq.gz -F plant_cp -o fast--SRR5602610-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602603_1.fastq.gz -2 SRR5602603_2.fastq.gz -F plant_cp -o fast--SRR5602603-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5028199_1.fastq.gz -2 SRR5028199_2.fastq.gz -F plant_cp -o fast--SRR5028199-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602609_1.fastq.gz -2 SRR5602609_2.fastq.gz -F plant_cp -o fast--SRR5602609-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602581_1.fastq.gz -2 SRR5602581_2.fastq.gz -F plant_cp -o fast--SRR5602581-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602598_1.fastq.gz -2 SRR5602598_2.fastq.gz -F plant_cp -o fast--SRR5602598-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602594_1.fastq.gz -2 SRR5602594_2.fastq.gz -F plant_cp -o fast--SRR5602594-plastome --fast -t 1
+get_organelle_from_reads.py -1 ERR964904_1.fastq.gz -2 ERR964904_2.fastq.gz -F plant_cp -o fast--ERR964904-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR2037123_1.fastq.gz -2 SRR2037123_2.fastq.gz -F plant_cp -o fast--SRR2037123-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602575_1.fastq.gz -2 SRR5602575_2.fastq.gz -F plant_cp -o fast--SRR5602575-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602591_1.fastq.gz -2 SRR5602591_2.fastq.gz -F plant_cp -o fast--SRR5602591-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602586_1.fastq.gz -2 SRR5602586_2.fastq.gz -F plant_cp -o fast--SRR5602586-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602572_1.fastq.gz -2 SRR5602572_2.fastq.gz -F plant_cp -o fast--SRR5602572-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602596_1.fastq.gz -2 SRR5602596_2.fastq.gz -F plant_cp -o fast--SRR5602596-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602606_1.fastq.gz -2 SRR5602606_2.fastq.gz -F plant_cp -o fast--SRR5602606-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602605_1.fastq.gz -2 SRR5602605_2.fastq.gz -F plant_cp -o fast--SRR5602605-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR4428742_1.fastq.gz -2 SRR4428742_2.fastq.gz -F plant_cp -o fast--SRR4428742-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602579_1.fastq.gz -2 SRR5602579_2.fastq.gz -F plant_cp -o fast--SRR5602579-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR2057084_1.fastq.gz -2 SRR2057084_2.fastq.gz -F plant_cp -o fast--SRR2057084-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602604_1.fastq.gz -2 SRR5602604_2.fastq.gz -F plant_cp -o fast--SRR5602604-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602595_1.fastq.gz -2 SRR5602595_2.fastq.gz -F plant_cp -o fast--SRR5602595-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602601_1.fastq.gz -2 SRR5602601_2.fastq.gz -F plant_cp -o fast--SRR5602601-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602602_1.fastq.gz -2 SRR5602602_2.fastq.gz -F plant_cp -o fast--SRR5602602-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602574_1.fastq.gz -2 SRR5602574_2.fastq.gz -F plant_cp -o fast--SRR5602574-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR1145775_1.fastq.gz -2 SRR1145775_2.fastq.gz -F plant_cp -o fast--SRR1145775-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR6932851_1.fastq.gz -2 SRR6932851_2.fastq.gz -F plant_cp -o fast--SRR6932851-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602576_1.fastq.gz -2 SRR5602576_2.fastq.gz -F plant_cp -o fast--SRR5602576-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602573_1.fastq.gz -2 SRR5602573_2.fastq.gz -F plant_cp -o fast--SRR5602573-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR6478596_1.fastq.gz -2 SRR6478596_2.fastq.gz -F plant_cp -o fast--SRR6478596-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602582_1.fastq.gz -2 SRR5602582_2.fastq.gz -F plant_cp -o fast--SRR5602582-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602600_1.fastq.gz -2 SRR5602600_2.fastq.gz -F plant_cp -o fast--SRR5602600-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602597_1.fastq.gz -2 SRR5602597_2.fastq.gz -F plant_cp -o fast--SRR5602597-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602589_1.fastq.gz -2 SRR5602589_2.fastq.gz -F plant_cp -o fast--SRR5602589-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602577_1.fastq.gz -2 SRR5602577_2.fastq.gz -F plant_cp -o fast--SRR5602577-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602590_1.fastq.gz -2 SRR5602590_2.fastq.gz -F plant_cp -o fast--SRR5602590-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602585_1.fastq.gz -2 SRR5602585_2.fastq.gz -F plant_cp -o fast--SRR5602585-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602578_1.fastq.gz -2 SRR5602578_2.fastq.gz -F plant_cp -o fast--SRR5602578-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR5602599_1.fastq.gz -2 SRR5602599_2.fastq.gz -F plant_cp -o fast--SRR5602599-plastome --fast -t 1
+get_organelle_from_reads.py -1 SRR7630500_1.fastq.gz -2 SRR7630500_2.fastq.gz -F plant_cp -o fast--SRR7630500-plastome --fast -t 1
+
+mkdir GetOrganelle-plastome-fast
+mv fast*plastome GetOrganelle-plastome-fast
