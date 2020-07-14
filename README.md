@@ -2,7 +2,7 @@
 
 This repository aims to make all our tests/comparisons reproducible. These  mainly include: 
 * Comparisons among published plastomes, plastomes re-assembled using GetOrganelle v1.6.2, and plastomes re-assembled using NOVOPlasty v2.7.2. 
-* Assembling animal and fungal mitogenomes using GetOrganelle v1.6.2
+* Comparisons between the animal/fungal mitogenomes assembled using GetOrganelle v1.6.2 and NOVOPlasty v2.7.2.
 * Performance characteristics of GetOrganelle using different parameters.
 
 ## Preparing
@@ -24,6 +24,10 @@ After finishing the <a href="#preparing">Preparing</a>, you can follow the follo
 * Execute `7.assessing_GetOrganelle_performance_characteristics.sh` to assess GetOrganelle using a gradient of word size ratio values, different sizes of the reference, pre-grouping or not. The raw data is a reduced size (500M) of *Haberlea rhodopensis* (SRR4428742; see <a href="#sample-info">Samples</a>).
 * Execute `8-1.assembling_56_animal_mitogenomes_using_NOVOPlasty.sh` to assemble animal mitogenoms using NOVOPlasty and execute `8-2.evaluating_NOVOPlasty_animal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
 * Execute `9-1.assembling_50_fungal_mitogenomes_using_NOVOPlasty.sh` to assemble fungal mitogenoms using GetOrganelle and execute `9-2.evaluating_NOVOPlasty_fungal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
+
+Extra tests:
+* Execute [2-3.assembling_50_plastomes_using_GetOrganelle_fast.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/2-3.assembling_50_plastomes_using_GetOrganelle_fast.sh) to do the plastome assembly using the fast-mode of GetOrganelle.
+* Execute [2-4.assembling_extra_2_plastomes_carrying_mitoDNA_using_GetOrganelle.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/2-4.assembling_extra_2_plastomes_carrying_mitoDNA_using_GetOrganelle.sh) to do the assembly for 2 mitochondrial-DNA-carrying plastomes using GetOrganelle.
 
 ## Results
 
