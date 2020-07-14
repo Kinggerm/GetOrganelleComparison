@@ -10,11 +10,11 @@ This repository aims to make all our tests/comparisons reproducible. These  main
 If you want to reproduce our results on your own computer, please
 * Download (clone) files in [GetOrganelleComparison/bin](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/) (ca. 23Mb uncompressed) using 
     
-        svn co https://github.com/Kinggerm/GetOrganelleComparison/trunk/bin
+      svn co https://github.com/Kinggerm/GetOrganelleComparison/trunk/bin
     
     or clone the entire repository (ca. 1.9Gb uncompressed) 
     
-        git clone git://github.com/Kinggerm/GetOrganelleComparison
+      git clone git://github.com/Kinggerm/GetOrganelleComparison
     
 * Download the dataset (see <a href="#sample-info">Samples</a>) using `1.downloading_data.sh` inside the downloaded `GetOrganelleComparison/bin`.
 * Download and install [GetOrganelle v1.6.2](https://github.com/Kinggerm/GetOrganelle/releases/tag/v1.6.2)** as well as its dependencies ([instruction](https://github.com/Kinggerm/GetOrganelle/wiki/Installation#2-using-the-setuppy)).
