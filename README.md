@@ -8,22 +8,29 @@ This repository aims to make all our tests/comparisons reproducible. These  main
 ## Preparing
 
 If you want to reproduce our results on your own computer, please
-* **Download files in GetOrganelleComparison/bin** using `svn co https://github.com/Kinggerm/GetOrganelleComparison/trunk/bin` (ca. 23Mb uncompressed). You can also use `git clone git://github.com/Kinggerm/GetOrganelleComparison` to download the whole repository (ca. 1.9Gb uncompressed).
-* **Download the dataset** (see <a href="#sample-info">Samples</a>) using `1.downloading_data.sh` in `GetOrganelleComparison/bin`.
-* **Download and install [GetOrganelle v1.6.2](https://github.com/Kinggerm/GetOrganelle/releases/tag/v1.6.2)** as well as its dependencies ([instruction](https://github.com/Kinggerm/GetOrganelle/wiki/Installation#2-using-the-setuppy)).
+* Download (clone) files in [GetOrganelleComparison/bin](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/) (ca. 23Mb uncompressed) using 
+    
+        svn co https://github.com/Kinggerm/GetOrganelleComparison/trunk/bin
+    
+    or clone the entire repository (ca. 1.9Gb uncompressed) 
+    
+        git clone git://github.com/Kinggerm/GetOrganelleComparison
+    
+* Download the dataset (see <a href="#sample-info">Samples</a>) using `1.downloading_data.sh` inside the downloaded `GetOrganelleComparison/bin`.
+* Download and install [GetOrganelle v1.6.2](https://github.com/Kinggerm/GetOrganelle/releases/tag/v1.6.2)** as well as its dependencies ([instruction](https://github.com/Kinggerm/GetOrganelle/wiki/Installation#2-using-the-setuppy)).
 NOVOPlasty v2.7.2 is included in GetOrganelleComparison/bin and not needed to be specifically installed. 
 
 ## Running
 
 After finishing the <a href="#preparing">Preparing</a>, you can follow the following lines to reproduce our results.
-* Execute `2-1.assembling_50_plastomes_using_GetOrganelle.sh` to do the plastome assembly using GetOrganelle and execute `2-2.evaluating_GetOrganelle_plastomes.sh` to evaluate the re-assembled plastomes using reads mapping.
-* Execute `3-1.assembling_50_plastomes_using_NOVOPlasty.sh` to do the plastome assembly using NOVOPlasty and execute `3-2.evaluating_NOVOPlasty_plastomes.sh` to evaluate the re-assembled plastomes using reads mapping.
-* Execute `4.evaluating_Published_plastomes.sh` to evaluate the published plastomes.
-* Execute `5-1.assembling_56_animal_mitogenomes_using_GetOrganelle.sh` to assemble animal mitogenoms using GetOrganelle and execute `5-2.evaluating_GetOrganelle_animal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
-* Execute `6-1.assembling_50_fungal_mitogenomes_using_GetOrganelle.sh` to assemble fungal mitogenoms using GetOrganelle and execute `6-2.evaluating_GetOrganelle_fungal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
-* Execute `7.assessing_GetOrganelle_performance_characteristics.sh` to assess GetOrganelle using a gradient of word size ratio values, different sizes of the reference, pre-grouping or not. The raw data is a reduced size (500M) of *Haberlea rhodopensis* (SRR4428742; see <a href="#sample-info">Samples</a>).
-* Execute `8-1.assembling_56_animal_mitogenomes_using_NOVOPlasty.sh` to assemble animal mitogenoms using NOVOPlasty and execute `8-2.evaluating_NOVOPlasty_animal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
-* Execute `9-1.assembling_50_fungal_mitogenomes_using_NOVOPlasty.sh` to assemble fungal mitogenoms using GetOrganelle and execute `9-2.evaluating_NOVOPlasty_fungal_mitogenomes.sh` to evaluate the assembled mitogenomes using gene hits.
+* Execute [2-1.assembling_50_plastomes_using_GetOrganelle.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/2-1.assembling_50_plastomes_using_GetOrganelle.sh) to do the plastome assembly using GetOrganelle and execute [2-2.evaluating_GetOrganelle_plastomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/2-2.evaluating_GetOrganelle_plastomes.sh) to evaluate the re-assembled plastomes using reads mapping.
+* Execute [3-1.assembling_50_plastomes_using_NOVOPlasty.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/3-1.assembling_50_plastomes_using_NOVOPlasty.sh) to do the plastome assembly using NOVOPlasty and execute [3-2.evaluating_NOVOPlasty_plastomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/3-2.evaluating_NOVOPlasty_plastomes.sh) to evaluate the re-assembled plastomes using reads mapping.
+* Execute [4.evaluating_Published_plastomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/4.evaluating_Published_plastomes.sh) to evaluate the published plastomes.
+* Execute [5-1.assembling_56_animal_mitogenomes_using_GetOrganelle.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/5-1.assembling_56_animal_mitogenomes_using_GetOrganelle.sh) to assemble animal mitogenoms using GetOrganelle and execute [5-2.evaluating_GetOrganelle_animal_mitogenomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/5-2.evaluating_GetOrganelle_animal_mitogenomes.sh) to evaluate the assembled mitogenomes using gene hits.
+* Execute [6-1.assembling_50_fungal_mitogenomes_using_GetOrganelle.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/6-1.assembling_50_fungal_mitogenomes_using_GetOrganelle.sh) to assemble fungal mitogenoms using GetOrganelle and execute [6-2.evaluating_GetOrganelle_fungal_mitogenomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/6-2.evaluating_GetOrganelle_fungal_mitogenomes.sh) to evaluate the assembled mitogenomes using gene hits.
+* Execute [7.assessing_GetOrganelle_performance_characteristics.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/7.assessing_GetOrganelle_performance_characteristics.sh) to assess GetOrganelle using a gradient of word size ratio values, different sizes of the reference, pre-grouping or not. The raw data is a reduced size (500M) of *Haberlea rhodopensis* (SRR4428742; see <a href="#sample-info">Samples</a>).
+* Execute [8-1.assembling_56_animal_mitogenomes_using_NOVOPlasty.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/8-1.assembling_56_animal_mitogenomes_using_NOVOPlasty.sh) to assemble animal mitogenoms using NOVOPlasty and execute [8-2.evaluating_NOVOPlasty_animal_mitogenomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/8-2.evaluating_NOVOPlasty_animal_mitogenomes.sh) to evaluate the assembled mitogenomes using gene hits.
+* Execute [9-1.assembling_50_fungal_mitogenomes_using_NOVOPlasty.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/9-1.assembling_50_fungal_mitogenomes_using_NOVOPlasty.sh) to assemble fungal mitogenoms using GetOrganelle and execute [9-2.evaluating_NOVOPlasty_fungal_mitogenomes.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/9-2.evaluating_NOVOPlasty_fungal_mitogenomes.sh) to evaluate the assembled mitogenomes using gene hits.
 
 Extra tests:
 * Execute [2-3.assembling_50_plastomes_using_GetOrganelle_fast.sh](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/bin/2-3.assembling_50_plastomes_using_GetOrganelle_fast.sh) to do the plastome assembly using the fast-mode of GetOrganelle.
@@ -31,9 +38,9 @@ Extra tests:
 
 ## Results
 
-A simplified assembly results of GetOrganelle, NOVOPlasty and/or Published were deposited in `GetOrganelleComparison/res`.
+A simplified assembly results of GetOrganelle, NOVOPlasty and/or Published were deposited in [GetOrganelleComparison/res](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/res/).
 
-A simplified evaluation results for GetOrganelle, NOVOPlasty and/or Published were deposited in `GetOrganelleComparison/eval`.
+A simplified evaluation results for GetOrganelle, NOVOPlasty and/or Published were deposited in [GetOrganelleComparison/eval](https://github.com/Kinggerm/GetOrganelleComparison/blob/master/eval/).
 
 ## Sample Info
 
